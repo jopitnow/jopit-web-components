@@ -1,0 +1,25 @@
+.Checkbox {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    appearance: none;
+    border: 2px solid #EEEEEE;
+    border-radius: 2px;
+    transition: 0.1s ease-in-out;
+}
+
+.Checkbox:checked {
+    background-color: #FF5656;
+    border: 2px solid #FF5656;
+}
+
+.Checkbox:checked::before {
+    content: "\2714";
+    padding: 3px;
+    font-size: 12px;
+    line-height: 12px;
+    color: white;
+}

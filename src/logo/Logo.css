@@ -1,0 +1,21 @@
+.Logo {
+    display: flex;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.Logo_Image {
+    height: 32px;
+    width: 32px;
+    pointer-events: none;
+}
+
+.Logo_Name {
+    font-family: Quicksand, serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF5656;
+    margin: auto auto auto 8px;
+}
