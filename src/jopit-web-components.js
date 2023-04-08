@@ -1,5 +1,7 @@
 import "./jopit-web-components.css?modules=false";
 
+export { default as Container } from "./conteiner/Container.js";
+
 export { default as TextInput } from "./input/standard/TextInput.js";
 
 export { default as PasswordTextInput } from "./input/password/PasswordTextInput.js";
