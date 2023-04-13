@@ -4,3 +4,22 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
+.User_Container {
+    width: 100%;
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+}
+
+.Nav_Menu_Container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.Side_Menu_Container {
+    height: 100%;
+    flex: 1;
+}
