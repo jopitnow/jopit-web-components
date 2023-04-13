@@ -9,7 +9,7 @@ export default function TextInput(props) {
                 className="Text_Input_Text"
                 type={props.type}
                 placeholder={props.placeholder}
-                value={props.text}
+                value={props.value}
                 onChange={props.onTextChange}/>
         </div>
     )
