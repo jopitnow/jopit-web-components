@@ -3,18 +3,35 @@ import './Select.css';
 
 export default function Select(props) {
     return (
-        <div className="Select">
+        <div id="select" className="Select">
             <p className="Select_Title">{props.title}</p>
-            <select className="Select_Input" value={props.value} onChange={props.onChange}>
+            <select
+                className="Select_Input"
+                value={props.value}
+                onChange={props.onChange}
+                onFocus={onFocus}
+                onBlur={onBlur}>
                 {props.options?.map((option) => (
                     <option key={option.value} value={option.value}>
                         {option.label}
                     </option>
                 ))}
             </select>
-            <div className="Select_Arrow_Container">
-                <div className="Select_Arrow"/>
-            </div>
+            <div id="arrow" className="Select_Arrow"/>
         </div>
     )
+}
+
+function onFocus() {
+    const arrow = document.getElementById("arrow");
+
+    arrow.style.borderLeft = "2px solid #333333"
+    arrow.style.borderBottom = "2px solid #333333"
+}
+
+function onBlur() {
+    const arrow = document.getElementById("arrow");
+
+    arrow.style.borderLeft = "2px solid #CCCCCC"
+    arrow.style.borderBottom = "2px solid #CCCCCC"
 }

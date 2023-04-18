@@ -55,10 +55,6 @@
     margin: 0;
 }
 
-.Select_Arrow_Container {
-    position: relative;
-}
-
 .Select_Arrow {
     position: absolute;
     right: 24px;
