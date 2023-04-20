@@ -15,3 +15,5 @@ export { default as Button } from "./button/Button.js";
 export { default as Checkbox } from "./checkbox/Checkbox.js";
 
 export { default as Select } from "./select/Select.js";
+
+export { default as AlertDialog } from "./dialog/alert/AlertDialog.js"
