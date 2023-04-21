@@ -55,6 +55,10 @@
     margin: 0;
 }
 
+option[value=""][disabled] {
+    display: none;
+}
+
 .Select_Arrow {
     position: absolute;
     right: 24px;

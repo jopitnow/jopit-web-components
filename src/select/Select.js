@@ -7,10 +7,16 @@ export default function Select(props) {
             <p className="Select_Title">{props.title}</p>
             <select
                 className="Select_Input"
+                disabled={props.disabled}
                 value={props.value}
                 onChange={props.onChange}
                 onFocus={onFocus}
                 onBlur={onBlur}>
+                <option
+                    value=""
+                    disabled
+                    selected={props.value === undefined || props.valueOf() === null}
+                >{props?.placeholder ?? "Selecciona una opción"}</option>
                 {props.options?.map((option) => (
                     <option key={option.value} value={option.value}>
                         {option.label}
