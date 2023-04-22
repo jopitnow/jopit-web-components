@@ -4,6 +4,8 @@ export { default as Container } from "./conteiner/Container.js";
 
 export { default as TextInput } from "./input/standard/TextInput.js";
 
+export { default as SearchTextInput } from "./input/search/SearchTextInput.js";
+
 export { default as PasswordTextInput } from "./input/password/PasswordTextInput.js";
 
 export { default as TextArea } from "./input/area/TextArea.js";
@@ -14,6 +16,8 @@ export { default as Button } from "./button/Button.js";
 
 export { default as Checkbox } from "./checkbox/Checkbox.js";
 
-export { default as Select } from "./select/Select.js";
+export { default as Select } from "./select/standard/Select.js";
+
+export { default as FilterSelect } from "./select/filter/FilterSelect.js";
 
 export { default as AlertDialog } from "./dialog/alert/AlertDialog.js"

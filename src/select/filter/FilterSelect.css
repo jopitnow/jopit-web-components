@@ -1,0 +1,56 @@
+.Filter_Select {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Filter_Select_Input {
+    height: 40px;
+    border: 2px solid #EEEEEE;
+    border-radius: 4px;
+    font-family: Quicksand, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+    text-align: left;
+    padding: 0 40px 0 16px;
+    appearance: none;
+}
+
+.Filter_Select_Input::placeholder {
+    color: #CCCCCC;
+    opacity: 1;
+}
+
+.Filter_Select_Input:focus {
+    outline: none !important;
+    border: 2px solid #777777;
+    box-shadow: 0 3px 4px rgba(51, 51, 51, 0.05);
+    border-radius: 4px;
+}
+
+.Filter_Select_Input[type=number]::-webkit-inner-spin-button,
+.Filter_Select_Input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+.Filter_Select_Arrow {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border-left:2px solid #CCCCCC;
+    border-bottom:2px solid #CCCCCC;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+}
