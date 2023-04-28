@@ -7,14 +7,13 @@ export default function FilterSelect(props) {
             <select
                 className="Filter_Select_Input"
                 disabled={props.disabled}
-                value={props.value}
+                value={props.value || ""}
                 onChange={props.onChange}
                 onFocus={() => onFocus(props.id)}
                 onBlur={() =>  onBlur(props.id)}>
                 <option
                     value=""
                     disabled
-                    selected={props.value === undefined || props.valueOf() === null}
                 >{props?.placeholder ?? "Filtro"}</option>
                 {props.options?.map((option) => (
                     <option key={option.value} value={option.value}>
