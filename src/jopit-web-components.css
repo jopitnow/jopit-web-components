@@ -33,3 +33,13 @@ body, html {
     border-radius: 4px !important;
     background: #FFFFFF !important;
 }
+
+.Toastify__toast--error {
+    border: 1px solid #CCCCCC;
+    font-family: Quicksand, serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FF5656;
+    border-radius: 4px !important;
+    background: #FFFFFF !important;
+}
