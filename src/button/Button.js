@@ -8,7 +8,8 @@ export default function Button(props) {
             style={
                 {
                     paddingTop:props.padding ? props.padding : "16px",
-                    paddingBottom:props.padding ? props.padding : "16px"
+                    paddingBottom:props.padding ? props.padding : "16px",
+                    background:props.background
                 }
             }
             onClick={props.onClick}>
