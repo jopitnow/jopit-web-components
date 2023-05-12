@@ -14,6 +14,7 @@ body, html, main {
 }
 
 .Nav_Menu_Container {
+    position: relative;
     width: 100%;
     flex: 1;
     display: flex;
