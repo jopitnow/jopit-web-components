@@ -26,6 +26,16 @@ body, html, main {
     flex: 1;
 }
 
+.Side_Menu_Carpet {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    border: none;
+    z-index: 1;
+}
+
 .Toastify__toast--info {
     border: 1px solid #CCCCCC;
     font-family: Quicksand, serif;
