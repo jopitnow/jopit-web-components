@@ -36,6 +36,21 @@ body, html, main {
     z-index: 1;
 }
 
+.Side_Menu_Header_Button {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
 .Side_Menu_Shop_Button {
     position: absolute;
     display: none;
@@ -50,6 +65,12 @@ body, html, main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
     cursor: pointer;
+}
+
+.Side_Menu_Header_Button_Image {
+    content: url("/assets/images/menu/jopit_menu.png");
+    width: 20px;
+    height: 20px;
 }
 
 .Side_Menu_Shop_Button_Image {
@@ -88,7 +109,17 @@ body, html, main {
     background: #FFFFFF !important;
 }
 
+@media screen and (max-width: 769px) {
+    .Side_Menu_Header_Button {
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 481px) {
+    .Side_Menu_Header_Button {
+        display: none;
+    }
+
     .Side_Menu_Shop_Button {
         display: flex;
     }
