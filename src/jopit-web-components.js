@@ -1,7 +1,5 @@
 import "./jopit-web-components.css?modules=false";
 
-export { default as Container } from "./conteiner/Container.js";
-
 export { default as TextInput } from "./input/standard/TextInput.js";
 
 export { default as SearchTextInput } from "./input/search/SearchTextInput.js";
@@ -12,7 +10,9 @@ export { default as TextArea } from "./input/area/TextArea.js";
 
 export { default as Logo } from "./logo/Logo.js";
 
-export { default as Button } from "./button/Button.js";
+export { default as MiddleButton } from "./button/middle/MiddleButton.js";
+
+export { default as Button } from "./button/standard/Button.js";
 
 export { default as Checkbox } from "./checkbox/Checkbox.js";
 
