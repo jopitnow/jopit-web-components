@@ -36,6 +36,26 @@ body, html, main {
     z-index: 1;
 }
 
+.Side_Menu_Shop_Button {
+    position: absolute;
+    display: none;
+    margin: 24px;
+    height: 56px;
+    width: 56px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.Side_Menu_Shop_Button_Image {
+    content: url("/assets/images/menu/jopit_menu.png");
+    width: 24px;
+    height: 24px;
+}
+
 .Toastify__toast--info {
     border: 1px solid #CCCCCC;
     font-family: Quicksand, serif;
@@ -64,4 +84,24 @@ body, html, main {
     color: #FF5656;
     border-radius: 4px !important;
     background: #FFFFFF !important;
+}
+
+@media screen and (max-width: 769px) {
+    .Side_Menu_Shop_Button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .Side_Menu_Shop_Button {
+        height: 48px;
+        width: 48px;
+    }
+
+    .Side_Menu_Shop_Button_Image {
+        width: 20px;
+        height: 20px;
+    }
 }
