@@ -1,4 +1,4 @@
-.Header {
+.Shop_Header {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.Header_Title {
+.Shop_Header_Title {
     margin: 0 auto;
     font-family: Quicksand, serif;
     font-style: normal;
@@ -16,7 +16,7 @@
     color: #333333;
 }
 
-.Header_Description {
+.Shop_Header_Description {
     width: 480px;
     margin: 0 auto;
     font-family: Quicksand, serif;
@@ -28,7 +28,7 @@
     text-align: center;
 }
 
-.Header_Back_Container {
+.Shop_Header_Back_Container {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -40,12 +40,12 @@
     gap: 8px;
 }
 
-.Header_Back_Image {
+.Shop_Header_Back_Image {
     width: 24px;
     height: 24px;
 }
 
-.Header_Back_Text {
+.Shop_Header_Back_Text {
     font-family: Quicksand, serif;
     font-style: normal;
     font-weight: 500;
@@ -57,79 +57,79 @@
 }
 
 @media screen and (max-width: 1201px) {
-    .Header {
+    .Shop_Header {
         gap: 8px;
     }
 
-    .Header_Title {
+    .Shop_Header_Title {
         font-size: 18px;
         line-height: 20px;
     }
 
-    .Header_Description {
+    .Shop_Header_Description {
         width: 400px;
         font-size: 16px;
         line-height: 18px;
     }
 
-    .Header_Back_Container {
+    .Shop_Header_Back_Container {
         gap: 8px;
     }
 
-    .Header_Back_Image {
+    .Shop_Header_Back_Image {
         width: 24px;
         height: 24px;
     }
 
-    .Header_Back_Text {
+    .Shop_Header_Back_Text {
         display: none;
     }
 }
 
 @media screen and (max-width: 769px) {
-    .Header {
+    .Shop_Header {
         padding: 32px;
     }
 
-    .Header_Title {
+    .Shop_Header_Title {
         font-size: 16px;
         line-height: 18px;
     }
 
-    .Header_Description {
+    .Shop_Header_Description {
         width: 320px;
         font-size: 14px;
         line-height: 16px;
     }
 
-    .Back_Container {
+    .Shop_Header_Back_Container {
         gap: 8px;
     }
 
-    .Header_Back_Image {
+    .Shop_Header_Back_Image {
         width: 16px;
         height: 16px;
     }
 }
 
 @media screen and (max-width: 481px) {
-    .Header {
+    .Shop_Header {
         gap: 4px;
         padding: 24px 16px;
     }
 
-    .Header_Title {
+    .Shop_Header_Title {
         font-size: 14px;
         line-height: 16px;
     }
 
-    .Header_Description {
+    .Shop_Header_Description {
         width: 240px;
         font-size: 12px;
         line-height: 14px;
     }
 
-    .Header_Back_Container {
+    .Shop_Header_Back_Container {
         gap: 8px;
     }
 }
