@@ -20,4 +20,6 @@ export { default as Select } from "./select/standard/Select.js";
 
 export { default as FilterSelect } from "./select/filter/FilterSelect.js";
 
-export { default as AlertDialog } from "./dialog/alert/AlertDialog.js"
+export { default as AlertDialog } from "./dialog/alert/AlertDialog.js";
+
+export { default as Header } from "./header/Header.js";
