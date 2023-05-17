@@ -13,6 +13,8 @@
 .Checkbox:checked {
     background-color: #FF5656;
     border: 2px solid #FF5656;
+    display: flex;
+
 }
 
 .Checkbox:checked::before {
@@ -31,6 +33,10 @@
 
     .Checkbox:checked::before {
         font-size: 10px;
-        line-height: 12px;
+        max-height: 2px;
+        line-height: 14px;
+        margin: 0;
+        padding-top: 1px;
+        padding-left: 3px;
     }
 }
