@@ -54,3 +54,38 @@ option[value=""][disabled] {
     transform: rotate(-45deg);
     transition: all 0.25s ease;
 }
+
+@media screen and (max-width: 769px) {
+    .Filter_Select_Input {
+        height: 40px;
+        font-size: 13px;
+        padding: 0 8px 0 12px;
+    }
+
+    .Filter_Select_Arrow {
+        right: 12px;
+        top: 14px;
+        width: 6px;
+        height: 6px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .Filter_Select_Title {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .Filter_Select_Input {
+        height: 32px;
+        font-size: 12px;
+        padding: 0 12px 0 8px;
+    }
+
+    .Filter_Select_Arrow {
+        right: 12px;
+        bottom: 22px;
+        width: 4px;
+        height: 4px;
+    }
+}

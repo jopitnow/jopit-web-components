@@ -45,3 +45,33 @@
     appearance: none;
     margin: 0;
 }
+
+@media screen and (max-width: 769px) {
+    .Search_Text_Input_Image {
+        top: 13px;
+        left: 13px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .Search_Text_Input_Text {
+        height: 36px;
+        font-size: 13px;
+        padding: 0 16px 0 36px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .Search_Text_Input_Image {
+        top: 13px;
+        left: 13px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .Search_Text_Input_Text {
+        height: 32px;
+        font-size: 12px;
+        padding: 0 16px 0 32px;
+    }
+}
