@@ -54,7 +54,7 @@
     margin: 0;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 769px) {
     .Text_Input_Title {
         font-size: 13px;
         line-height: 15px;
@@ -68,5 +68,17 @@
         height: 44px;
         font-size: 14px;
         padding: 0 16px 0 16px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .Text_Input_Title {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .Text_Input_Text {
+        height: 40px;
+        font-size: 13px;
     }
 }

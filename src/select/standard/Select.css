@@ -71,25 +71,42 @@ option[value=""][disabled] {
     transition: all 0.25s ease;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 769px) {
     .Select_Title {
         font-size: 13px;
         line-height: 15px;
-        padding-left: 8px;
-        padding-right: 8px;
-        margin: 0 0 0 16px;
     }
 
     .Select_Input {
-        height: 48px;
+        height: 44px;
         font-size: 14px;
         padding: 0 12px 0 16px;
     }
 
     .Select_Arrow {
         right: 24px;
-        bottom: 22px;
+        bottom: 20px;
         width: 8px;
         height: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Select_Title {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .Select_Input {
+        height: 40px;
+        font-size: 13px;
+        padding: 0 12px 0 16px;
+    }
+
+    .Select_Arrow {
+        right: 16px;
+        bottom: 18px;
+        width: 6px;
+        height: 6px;
     }
 }

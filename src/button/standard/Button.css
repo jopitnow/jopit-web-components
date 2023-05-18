@@ -19,7 +19,7 @@
     margin: auto;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 769px) {
     .Button {
         padding-top: 14px;
         padding-bottom: 14px;
@@ -27,5 +27,16 @@
 
     .Button_Text {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .Button {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .Button_Text {
+        font-size: 13px;
     }
 }

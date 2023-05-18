@@ -58,6 +58,20 @@
     margin: 0;
 }
 
+@media screen and (max-width: 769px) {
+    .Text_Area_Title {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .Text_Area_Text {
+        padding: 8px 16px 0 16px;
+        min-height: 76px;
+        font-size: 14px;
+    }
+}
+
+
 @media screen and (max-width: 481px) {
     .Text_Area_Title {
         font-size: 13px;
@@ -65,7 +79,8 @@
     }
 
     .Text_Area_Text {
-        min-height: 80px;
-        font-size: 14px;
+        min-height: 64px;
+        font-size: 13px;
+        line-height: 15px;
     }
 }
