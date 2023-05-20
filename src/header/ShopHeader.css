@@ -116,12 +116,7 @@
     }
 
     .Shop_Header_Back_Container {
-        gap: 8px;
-    }
-
-    .Shop_Header_Back_Image {
-        width: 16px;
-        height: 16px;
+        display: none;
     }
 }
 
@@ -140,9 +135,5 @@
         width: 240px;
         font-size: 12px;
         line-height: 14px;
-    }
-
-    .Shop_Header_Back_Container {
-        gap: 8px;
     }
 }
