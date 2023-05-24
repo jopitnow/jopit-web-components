@@ -1,12 +1,16 @@
 import React from "react";
 import './Checkbox.css';
+import checkmark from '../../assets/images/checkbox/jopit_checkmark.png'
 
 export default function Checkbox(props) {
     return (
-        <input
-            className="Checkbox"
-            type="checkbox"
-            checked={props.checked}
-            onChange={props.onChange}/>
+        <div className="Checkbox_Container">
+            <input
+                className="Checkbox"
+                type="checkbox"
+                checked={props.checked}
+                onChange={props.onChange}/>
+            <img className="Checkmark" src={checkmark} alt={""}/>
+        </div>
     )
 }

@@ -16,7 +16,10 @@
     color: #333333;
     text-align: left;
     padding: 0 40px 0 16px;
+    background: #fff;
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .Filter_Select_Input::placeholder {
@@ -31,8 +34,8 @@
     border-radius: 4px;
 }
 
-.Filter_Select_Input[type=number]::-webkit-inner-spin-button,
-.Filter_Select_Input[type=number]::-webkit-outer-spin-button {
+.Filter_Select_Input::-webkit-inner-spin-button,
+.Filter_Select_Input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
