@@ -32,6 +32,10 @@
     color: #333333;
     text-align: left;
     padding: 0 16px 0 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none !important;
 }
 
 .Text_Input_Text::placeholder {

@@ -6,6 +6,10 @@ body, html, main {
     padding: 0;
 }
 
+button, input, select, option {
+    margin: 0;
+}
+
 .User_Container {
     width: 100%;
     height: 100%;
