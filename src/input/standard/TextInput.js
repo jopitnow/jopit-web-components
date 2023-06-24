@@ -10,6 +10,7 @@ export default function TextInput(props) {
                 type={props.type}
                 placeholder={props.placeholder}
                 value={props.value}
+                autoComplete={props.autoComplete}
                 onChange={props.onTextChange}/>
         </div>
     )

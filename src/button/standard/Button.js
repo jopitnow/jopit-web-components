@@ -5,9 +5,16 @@ export default function Button(props) {
     return (
         <button
             className="Button"
+            disabled={props.isLoading}
             style={{background:props.background}}
             onClick={props.onClick}>
-            <p className="Button_Text">{props.text}</p>
+            {
+                !props.isLoading
+                    ?
+                    <p className="Button_Text">{props.text}</p>
+                    :
+                    <div className="Button_Spinner"/>
+            }
         </button>
     )
 }

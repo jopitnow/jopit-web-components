@@ -5,6 +5,8 @@
     background: #FF5656;
     border-radius: 4px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -17,6 +19,20 @@
     font-weight: 500;
     color: white;
     margin: auto;
+}
+
+.Button_Spinner {
+    border: 2px solid #EEEEEE;
+    border-top: 2px solid #EABBBB;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 @media screen and (max-width: 769px) {
