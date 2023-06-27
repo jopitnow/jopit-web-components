@@ -83,6 +83,12 @@ button, input, select, option, textarea, img {
     height: 16px;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px white inset !important;
+    background: transparent !important;
+    border: 2px solid #4285F4;
+}
+
 .Toastify__toast {
     border: none !important;
     font-family: Quicksand, serif !important;
