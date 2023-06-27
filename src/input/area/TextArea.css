@@ -40,11 +40,16 @@
     -moz-appearance: none;
     appearance: none;
     box-shadow: none !important;
+    transition: border 150ms ease-in-out;
 }
 
 .Text_Area_Text::placeholder {
     color: #CCCCCC;
     opacity: 1;
+}
+
+.Text_Area_Text:hover {
+    border: 2px solid #AAAAAA;
 }
 
 .Text_Area_Text:focus {

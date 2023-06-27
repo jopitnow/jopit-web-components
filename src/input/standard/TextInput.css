@@ -36,11 +36,17 @@
     -moz-appearance: none;
     appearance: none;
     box-shadow: none !important;
+    background-color: white !important;
+    transition: border 150ms ease-in-out;
 }
 
 .Text_Input_Text::placeholder {
     color: #CCCCCC;
     opacity: 1;
+}
+
+.Text_Input_Text:hover {
+    border: 2px solid #AAAAAA;
 }
 
 .Text_Input_Text:focus {

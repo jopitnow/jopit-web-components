@@ -30,8 +30,8 @@ export default function Select(props) {
 function onFocus() {
     const arrow = document.getElementById("arrow");
 
-    arrow.style.borderLeft = "2px solid #333333"
-    arrow.style.borderBottom = "2px solid #333333"
+    arrow.style.borderLeft = "2px solid #777777"
+    arrow.style.borderBottom = "2px solid #777777"
 }
 
 function onBlur() {

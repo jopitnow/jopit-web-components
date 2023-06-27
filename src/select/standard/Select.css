@@ -36,11 +36,16 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    transition: border 150ms ease-in-out;
 }
 
 .Select_Input::placeholder {
     color: #CCCCCC;
     opacity: 1;
+}
+
+.Select_Input:hover {
+    border: 2px solid #AAAAAA;
 }
 
 .Select_Input:focus {
@@ -71,7 +76,7 @@ option[value=""][disabled] {
     border-left:2px solid #CCCCCC;
     border-bottom:2px solid #CCCCCC;
     transform: rotate(-45deg);
-    transition: all 0.25s ease;
+    transition: all 150ms ease-in-out;
 }
 
 @media screen and (max-width: 769px) {

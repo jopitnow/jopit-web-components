@@ -29,13 +29,13 @@ export default function FilterSelect(props) {
 function onFocus(id) {
     const arrow = document.getElementById(id + "_arrow");
 
-    arrow.style.borderLeft = "2px solid #333333"
-    arrow.style.borderBottom = "2px solid #333333"
+    arrow.style.borderLeft = "2px solid #777777"
+    arrow.style.borderBottom = "2px solid #777777"
 }
 
 function onBlur(id) {
     const arrow = document.getElementById(id + "_arrow");
 
-    arrow.style.borderLeft = "2px solid #CCCCCC"
-    arrow.style.borderBottom = "2px solid #CCCCCC"
+    arrow.style.borderLeft = "2px solid #777777"
+    arrow.style.borderBottom = "2px solid #777777"
 }

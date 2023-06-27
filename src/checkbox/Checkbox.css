@@ -15,6 +15,11 @@
     appearance: none;
     border: 2px solid #EEEEEE;
     border-radius: 2px;
+    transition: border 150ms ease-in-out;
+}
+
+.Checkbox:hover {
+    border: 2px solid #AAAAAA;
 }
 
 .Checkbox:checked {

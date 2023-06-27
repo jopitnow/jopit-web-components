@@ -10,7 +10,7 @@ export default function PasswordTextInput(props) {
                 id={"password_input_" + props.id}
                 className="Password_Text_Input_Text"
                 type="password"
-                autoComplete="current-password"
+                autoComplete={props.autoComplete}
                 placeholder={props.placeholder}
                 value={props.value}
                 onChange={props.onTextChange}/>
