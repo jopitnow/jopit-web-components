@@ -36,7 +36,6 @@
     -moz-appearance: none;
     appearance: none;
     box-shadow: none !important;
-    background-color: white !important;
     transition: border 150ms ease-in-out;
 }
 
