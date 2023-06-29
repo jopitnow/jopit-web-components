@@ -13,6 +13,7 @@ export default function PasswordTextInput(props) {
                 autoComplete={props.autoComplete}
                 placeholder={props.placeholder}
                 value={props.value}
+                onKeyDown={props.onKeyDown}
                 onChange={props.onTextChange}/>
             <button className="Password_Text_Input_Suffix_Button" onClick={() => onHideStateChange(props.id)}>
                 <img className="Password_Text_Input_Suffix_Icon" src={suffixIcon} alt="Ocultar/Mostrar contraseña"/>

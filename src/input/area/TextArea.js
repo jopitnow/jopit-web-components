@@ -13,6 +13,7 @@ export default function TextArea(props) {
                 rows={props.rows}
                 wrap={props.wrap}
                 maxLength={props.maxLength}
+                onKeyDown={props.onKeyDown}
                 onChange={props.onTextChange}/>
         </div>
     )

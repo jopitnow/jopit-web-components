@@ -11,6 +11,7 @@ export default function SearchTextInput(props) {
                 type={props.type}
                 placeholder={props.placeholder}
                 value={props.value}
+                onKeyDown={props.onKeyDown}
                 onChange={props.onTextChange}/>
         </div>
     )
