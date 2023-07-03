@@ -71,10 +71,8 @@ button, input, select, option, textarea, img {
     cursor: pointer;
 }
 
-.Side_Menu_Header_Button_Image {
-    content: url("/assets/images/menu/jopit_menu.png");
-    width: 20px;
-    height: 20px;
+.Side_Menu_Shop_Button {
+    background: #FAFAFA;
 }
 
 .Side_Menu_Shop_Button_Image {
@@ -116,16 +114,6 @@ input:-webkit-autofill {
 }
 
 @media screen and (max-width: 769px) {
-    .Side_Menu_Header_Button {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 481px) {
-    .Side_Menu_Header_Button {
-        display: none;
-    }
-
     .Side_Menu_Shop_Button {
         display: flex;
     }
