@@ -55,7 +55,7 @@
     margin: 0;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1025px) {
     .Search_Text_Input_Image {
         top: 13px;
         left: 13px;

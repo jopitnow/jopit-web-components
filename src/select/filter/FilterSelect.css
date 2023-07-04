@@ -64,7 +64,7 @@ option[value=""][disabled] {
     transition: all 150ms ease-in-out;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1025px) {
     .Filter_Select_Input {
         height: 40px;
         font-size: 13px;

@@ -63,7 +63,7 @@
     margin: 0;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1025px) {
     .Text_Input_Title {
         font-size: 13px;
         line-height: 15px;

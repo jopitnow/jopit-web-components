@@ -79,7 +79,7 @@ option[value=""][disabled] {
     transition: all 150ms ease-in-out;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1025px) {
     .Select_Title {
         font-size: 13px;
         line-height: 15px;
