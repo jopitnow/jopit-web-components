@@ -40,21 +40,6 @@ button, input, select, option, textarea, img {
     z-index: 1;
 }
 
-.Side_Menu_Header_Button {
-    position: absolute;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-    margin-left: 40px;
-    height: 40px;
-    width: 40px;
-    background: none;
-    border: none;
-    z-index: 1;
-    cursor: pointer;
-}
-
 .Side_Menu_Shop_Button {
     position: absolute;
     display: none;
