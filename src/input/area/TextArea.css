@@ -22,7 +22,7 @@
 }
 
 .Text_Area_Text {
-    min-height: 96px;
+    min-height: 104px;
     border: 2px solid #EEEEEE;
     border-radius: 4px;
     font-family: Quicksand, serif;
@@ -34,7 +34,7 @@
     color: #333333;
     text-align: left;
     overflow: auto;
-    padding: 12px 16px 0 16px;
+    padding: 12px 16px;
     resize:none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -74,7 +74,7 @@
     }
 
     .Text_Area_Text {
-        padding: 8px 16px 0 16px;
+        padding: 8px 16px;
         min-height: 76px;
         font-size: 14px;
     }
