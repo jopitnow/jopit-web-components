@@ -18,13 +18,12 @@ export default function AlertDialog(props) {
             </div>
             <div className="Alert_Dialog_Button_Container">
                 <button
-                    className="Alert_Dialog_Disagree_Button"
+                    className="Alert_Dialog_Button Alert_Dialog_Disagree_Button"
                     onClick={props.onDisagreeClick}
                     style={{borderColor: getDialogColor(props.type), color: getDialogColor(props.type)}}>{props.disagreeText}</button>
                 <button
-                    className="Alert_Dialog_Agree_Button"
-                    onClick={props.onAgreeClick}
-                    style={{background: getDialogColor(props.type)}}>{props.agreeText}</button>
+                    className={"Alert_Dialog_Button " + (getDialogStyle(props.type))}
+                    onClick={props.onAgreeClick}>{props.agreeText}</button>
             </div>
         </div>
     )
@@ -53,5 +52,18 @@ function getDialogColor(type) {
         return "#FFB800";
     default:
         return "#FF5656";
+    }
+}
+
+function getDialogStyle(type) {
+    switch (type) {
+    case "success":
+        return "Alert_Dialog_Agree_Button_Success";
+    case "info":
+        return "Alert_Dialog_Agree_Button_Info";
+    case "warning":
+        return "Alert_Dialog_Agree_Button_Warning";
+    default:
+        return "Alert_Dialog_Agree_Button_Error";
     }
 }

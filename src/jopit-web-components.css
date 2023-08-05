@@ -106,4 +106,8 @@ input:-webkit-autofill {
     .Side_Menu_Shop_Button {
         display: flex;
     }
+
+    .Toastify__toast {
+        font-size: 13px !important;
+    }
 }
