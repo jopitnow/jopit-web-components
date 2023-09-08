@@ -1,28 +1,41 @@
 import React from "react";
 import './FilterSelect.css';
+import "skeleton-screen-css"
 
 export default function FilterSelect(props) {
     return (
         <div id="select" className="Filter_Select">
-            <select
-                className="Filter_Select_Input"
-                disabled={props.disabled}
-                value={props.value || ""}
-                onChange={props.onChange}
-                onFocus={() => onFocus(props.id)}
-                onBlur={() =>  onBlur(props.id)}>
-                <option
-                    value=""
-                    disabled
-                >{props?.placeholder ?? "Filtro"}</option>
-                {props.options?.map((option) => (
-                    <option key={option.value} value={option.value}>
-                        {option.label}
-                    </option>
-                ))}
-            </select>
+            {
+                props?.loading ?
+                    <div className="Filter_Select_Input_Skeleton">
+                        <div className="ssc-square"/>
+                    </div>
+                    :
+                    <select
+                        className="Filter_Select_Input"
+                        disabled={props.disabled}
+                        value={props.value || ""}
+                        onChange={props.onChange}
+                        onFocus={() => onFocus(props.id)}
+                        onBlur={() =>  onBlur(props.id)}>
+                        <DefaultOption placeholder={props?.placeholder}/>
+                        {props.options?.map((option) => (
+                            <option key={option.value} value={option.value}>
+                                {option.label}
+                            </option>
+                        ))}
+                    </select>
+            }
             <div id={props.id + "_arrow"} className="Filter_Select_Arrow"/>
         </div>
+    )
+}
+
+function DefaultOption(props) {
+    return(
+        <option value="" disabled>
+            {props?.placeholder ?? "Filtro"}
+        </option>
     )
 }
 

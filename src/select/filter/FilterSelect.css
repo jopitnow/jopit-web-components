@@ -5,6 +5,24 @@
     flex-direction: column;
 }
 
+.Filter_Select_Input_Skeleton {
+    height: 40px;
+    border: 2px solid #EEEEEE;
+    border-radius: 4px;
+    padding: 0 40px 0 16px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.ssc-square {
+    height: 16px !important;
+    width: 80px !important;
+    border-radius: 4px;
+    skeleton-element-color: #f5f5f5 !important;
+    background: #ebebeb !important;
+}
+
 .Filter_Select_Input {
     height: 40px;
     border: 2px solid #EEEEEE;
@@ -71,6 +89,10 @@ option[value=""][disabled] {
         padding: 0 8px 0 12px;
     }
 
+    .ssc-square {
+        height: 13px !important;
+    }
+
     .Filter_Select_Arrow {
         right: 12px;
         top: 14px;
@@ -83,6 +105,14 @@ option[value=""][disabled] {
     .Filter_Select_Title {
         font-size: 12px;
         line-height: 14px;
+    }
+
+    .Filter_Select_Input_Skeleton {
+        height: 32px;
+    }
+
+    .ssc-square {
+        height: 12px !important;
     }
 
     .Filter_Select_Input {
