@@ -16,8 +16,8 @@ export default function Select(props) {
                         disabled={props.disabled}
                         value={props.value || ""}
                         onChange={props.onChange}
-                        onFocus={onFocus}
-                        onBlur={onBlur}>
+                        onFocus={() => onFocus(props.id)}
+                        onBlur={() =>  onBlur(props.id)}>
                         <DefaultOption placeholder={props?.placeholder}/>
                         {props.options?.map((option) => (
                             <option key={option.value} value={option.value}>
@@ -26,7 +26,7 @@ export default function Select(props) {
                         ))}
                     </select>
             }
-            <div id="arrow" className="Select_Arrow"/>
+            <div id={props.id + "_arrow"} className="Select_Arrow"/>
         </div>
     )
 }
@@ -39,15 +39,15 @@ function DefaultOption(props) {
     )
 }
 
-function onFocus() {
-    const arrow = document.getElementById("arrow");
+function onFocus(id) {
+    const arrow = document.getElementById(id + "_arrow");
 
     arrow.style.borderLeft = "2px solid #777777"
     arrow.style.borderBottom = "2px solid #777777"
 }
 
-function onBlur() {
-    const arrow = document.getElementById("arrow");
+function onBlur(id) {
+    const arrow = document.getElementById(id + "_arrow");
 
     arrow.style.borderLeft = "2px solid #CCCCCC"
     arrow.style.borderBottom = "2px solid #CCCCCC"
