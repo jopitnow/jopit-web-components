@@ -5,7 +5,7 @@ export default function Button(props) {
     return (
         <button
             className="Button"
-            disabled={props.isLoading}
+            disabled={props.isLoading || props.disabled}
             style={{background:props.background}}
             onClick={props.onClick}>
             {

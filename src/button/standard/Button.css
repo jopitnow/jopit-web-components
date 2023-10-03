@@ -18,6 +18,16 @@
     background: #e04c4c;
 }
 
+.Button:disabled {
+    background: #FF8C8C;
+    cursor: auto;
+    box-shadow: none;
+}
+
+.Button:disabled:hover {
+    background: #FF8C8C;
+}
+
 .Button_Text {
     font-family: Quicksand, serif;
     font-size: 16px;
