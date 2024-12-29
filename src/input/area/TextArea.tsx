@@ -1,7 +1,19 @@
 import React from "react";
 import './TextArea.css';
 
-export default function TextArea(props) {
+type TextAreaProps = {
+    title: string;
+    placeholder: string;
+    value: string | ReadonlyArray<string> | number;
+    cols?: number;
+    rows?: number;
+    wrap?: "soft" | "hard" | "off";
+    maxLength?: number;
+    onKeyDown?: (e) => void;
+    onTextChange: (e) => void;
+};
+
+export default function TextArea(props: TextAreaProps) {
     return (
         <div className="Text_Area">
             <p className="Text_Area_Title">{props.title}</p>

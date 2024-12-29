@@ -1,19 +1,36 @@
 import React from "react";
 import './Select.css';
+import {resources} from "../../resources";
 
-export default function Select(props) {
+export type SelectOption = {
+    value: number,
+    label: string
+}
+
+type SelectProps = {
+    id: string,
+    title: string,
+    placeholder: string,
+    options: ReadonlyArray<SelectOption>
+    value?: string | ReadonlyArray<string> | number,
+    isLoading: boolean,
+    isDisabled: boolean,
+    onChange: (e) => void;
+};
+
+export default function Select(props: SelectProps) {
     return (
         <div id="select" className="Select">
             <p className="Select_Title">{props.title}</p>
             {
-                props?.loading ?
+                props?.isLoading ?
                     <div className="Select_Input_Skeleton">
                         <div className="ssc-square"/>
                     </div>
                     :
                     <select
                         className="Select_Input"
-                        disabled={props.disabled}
+                        disabled={props.isDisabled}
                         value={props.value || ""}
                         onChange={props.onChange}
                         onFocus={() => onFocus(props.id)}
@@ -31,22 +48,26 @@ export default function Select(props) {
     )
 }
 
-function DefaultOption(props) {
+export type DefaultOptionProps = {
+    placeholder?: string
+}
+
+function DefaultOption(props: DefaultOptionProps) {
     return(
         <option value="" disabled>
-            {props?.placeholder ?? "Selecciona una opción"}
+            {props?.placeholder ?? resources.select.defaultPlaceholder}
         </option>
     )
 }
 
-function onFocus(id) {
+export function onFocus(id: string) {
     const arrow = document.getElementById(id + "_arrow");
 
     arrow.style.borderLeft = "2px solid #777777"
     arrow.style.borderBottom = "2px solid #777777"
 }
 
-function onBlur(id) {
+export function onBlur(id: string) {
     const arrow = document.getElementById(id + "_arrow");
 
     arrow.style.borderLeft = "2px solid #CCCCCC"

@@ -1,7 +1,17 @@
-import React from "react";
+import React, {HTMLInputTypeAttribute} from "react";
 import './TextInput.css';
 
-export default function TextInput(props) {
+type TextInputProps = {
+    title: string;
+    placeholder: string;
+    value: string | ReadonlyArray<string> | number;
+    type?: HTMLInputTypeAttribute;
+    autoComplete?: never;
+    onKeyDown?: (e) => void;
+    onTextChange: (e) => void;
+};
+
+export default function TextInput(props: TextInputProps) {
     return (
         <div className="Text_Input">
             <p className="Text_Input_Title">{props.title}</p>
