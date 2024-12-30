@@ -1,6 +1,6 @@
 import React from "react";
 import './Checkbox.css';
-import checkmark from '../../assets/images/checkbox/jopit_checkmark.png'
+import checkmark from '/assets/images/checkbox/jopit_checkmark.webp'
 
 type CheckboxProps = {
     checked: boolean;

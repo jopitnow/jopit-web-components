@@ -6,7 +6,7 @@ import {resources} from "../resources";
 
 type LogoProps = {
     isWhite: boolean,
-    onLogoClicked: (e) => void;
+    onLogoClicked?: (e) => void;
 };
 
 export default function Logo(props: LogoProps) {

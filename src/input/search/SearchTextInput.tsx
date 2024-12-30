@@ -1,6 +1,6 @@
 import React, {HTMLInputTypeAttribute} from "react";
 import './SearchTextInput.css';
-import prefixIcon from "../../../assets/images/search/jopit_search.png";
+import prefixIcon from "/assets/images/search/jopit_search.webp";
 
 type TextInputProps = {
     placeholder: string;

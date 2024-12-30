@@ -1,4 +1,4 @@
-import "./index.css?modules=false";
+import "./index.css";
 
 export { default as TextInput } from "./input/standard/TextInput";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import './ShopHeader.css';
-import backIcon from "../../assets/images/header/jopit_back.png";
+import backIcon from "/assets/images/header/jopit_back.webp";
 import {resources} from "../resources";
 
 type HeaderProps = {
