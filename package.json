@@ -1,16 +1,14 @@
 {
-    "name": "@jopit/web-components",
+    "name": "@jopitnow/web-components",
     "types": "dist/index.d.ts",
     "main": "dist/index.js",
-    "version": "1.1.0",
+    "version": "0.0.0",
     "description": "Jopit web UI components",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jopitnow/jopit-web-components.git"
     },
-    "keywords": [
-        "visual components"
-    ],
+    "keywords": ["visual components"],
     "author": "jopit",
     "license": "MIT",
     "bugs": {
@@ -19,6 +17,9 @@
     "homepage": "https://github.com/jopitnow/jopit-web-components#readme",
     "scripts": {
         "build": "webpack"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
     },
     "devDependencies": {
         "@babel/core": "^7.15.0",
