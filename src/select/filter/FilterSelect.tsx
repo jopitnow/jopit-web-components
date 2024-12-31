@@ -1,19 +1,31 @@
 import React from "react";
 import './FilterSelect.css';
 import "skeleton-screen-css"
+import {DefaultOptionProps, onBlur, onFocus, SelectOption} from "../standard/Select";
+import {resources} from "../../resources";
 
-export default function FilterSelect(props) {
+type SelectProps = {
+    id: string,
+    placeholder: string,
+    options: ReadonlyArray<SelectOption>
+    value?: string | ReadonlyArray<string> | number,
+    isLoading: boolean,
+    isDisabled: boolean,
+    onChange: (e) => void;
+};
+
+export default function FilterSelect(props: SelectProps) {
     return (
         <div id="select" className="Filter_Select">
             {
-                props?.loading ?
+                props?.isLoading ?
                     <div className="Filter_Select_Input_Skeleton">
                         <div className="ssc-square"/>
                     </div>
                     :
                     <select
                         className="Filter_Select_Input"
-                        disabled={props.disabled}
+                        disabled={props.isDisabled}
                         value={props.value || ""}
                         onChange={props.onChange}
                         onFocus={() => onFocus(props.id)}
@@ -31,24 +43,10 @@ export default function FilterSelect(props) {
     )
 }
 
-function DefaultOption(props) {
+function DefaultOption(props: DefaultOptionProps) {
     return(
         <option value="" disabled>
-            {props?.placeholder ?? "Filtro"}
+            {props?.placeholder ?? resources.select.defaultFilterPlaceholder}
         </option>
     )
-}
-
-function onFocus(id) {
-    const arrow = document.getElementById(id + "_arrow");
-
-    arrow.style.borderLeft = "2px solid #777777"
-    arrow.style.borderBottom = "2px solid #777777"
-}
-
-function onBlur(id) {
-    const arrow = document.getElementById(id + "_arrow");
-
-    arrow.style.borderLeft = "2px solid #CCCCCC"
-    arrow.style.borderBottom = "2px solid #CCCCCC"
 }

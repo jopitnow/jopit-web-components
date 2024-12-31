@@ -1,0 +1,10 @@
+.idea/
+.husky/
+assets/
+src/
+node_modules/
+*.test.*
+tsconfig.json
+.prettierignore
+.eslintrc
+.webpack.config.js

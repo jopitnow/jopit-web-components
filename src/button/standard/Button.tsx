@@ -1,11 +1,19 @@
 import React from "react";
 import './Button.css';
 
-export default function Button(props) {
+type ButtonProps = {
+    text: string;
+    isLoading?: boolean;
+    isDisabled?: boolean;
+    background?: string;
+    onClick: (e) => void;
+};
+
+export default function Button(props: ButtonProps) {
     return (
         <button
             className="Button"
-            disabled={props.isLoading || props.disabled}
+            disabled={props.isLoading || props.isDisabled}
             style={{background:props.background}}
             onClick={props.onClick}>
             {

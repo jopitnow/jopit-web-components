@@ -65,7 +65,7 @@ button, input, select, option, textarea, img {
 }
 
 .Side_Menu_Shop_Button_Image {
-    content: url("/assets/images/menu/jopit_menu.png");
+    content: url("/assets/images/menu/jopit_menu.webp");
     width: 16px;
     height: 16px;
 }

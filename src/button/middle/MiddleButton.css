@@ -20,6 +20,15 @@
     margin: auto;
 }
 
+.Middle_Button_Spinner {
+    border: 2px solid #EEEEEE;
+    border-top: 2px solid #EABBBB;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    animation: spin 1s linear infinite;
+}
+
 .Middle_Button:hover {
     background: #e04c4c;
 }

@@ -1,37 +1,48 @@
-const { merge } = require("webpack-merge");
-const singleSpaDefaults = require("webpack-config-single-spa-react");
+// noinspection WebpackConfigHighlighting
 
-module.exports = (webpackConfigEnv, argv) => {
-    const defaultConfig = singleSpaDefaults({
-        orgName: "jopit",
-        projectName: "web-components",
-        webpackConfigEnv,
-        argv,
-    });
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-    return merge(defaultConfig, {
-        devServer: {
-            port: 1234
-        },
-        module: {
-            rules: [
-                {
-                    test: /\.(png|jpg|gif|svg)$/,
-                    type: "asset"
-                },
-                {
-                    test: /\.(woff|woff2|eot|ttf|otf)$/,
-                    use: [
-                        {
-                            loader: 'file-loader',
-                            options: {
-                                name: '[name].[ext]',
-                                outputPath: 'assets/fonts'
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
-    });
+module.exports = {
+    entry: "./src/index.tsx",
+    output: {
+        path: path.resolve(__dirname, "dist"),
+        filename: "index.js",
+        library: "@jopit/web-components",
+        libraryTarget: "umd",
+        globalObject: "this"
+    },
+    externals: {
+        'react': 'react',
+        'react-dom' : 'react-dom'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                use: "ts-loader",
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                ],
+            },
+            {
+                test: /\.(png|jpg|gif|svg|webp)$/,
+                type: "asset"
+            }
+        ],
+    },
+    resolve: {
+        extensions: [".tsx", ".ts", ".js"],
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: "index.css",
+        }),
+    ],
+    mode: "development"
 };

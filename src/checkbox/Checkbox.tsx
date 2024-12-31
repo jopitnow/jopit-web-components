@@ -1,8 +1,13 @@
 import React from "react";
 import './Checkbox.css';
-import checkmark from '../../assets/images/checkbox/jopit_checkmark.png'
+import checkmark from '/assets/images/checkbox/jopit_checkmark.webp'
 
-export default function Checkbox(props) {
+type CheckboxProps = {
+    checked: boolean;
+    onChange: (e) => void;
+};
+
+export default function Checkbox(props: CheckboxProps) {
     return (
         <div className="Checkbox_Container">
             <input
