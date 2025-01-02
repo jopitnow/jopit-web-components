@@ -5,9 +5,10 @@
     "declaration": true,
     "declarationMap": true,
     "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
     "target": "es6"
   },
   "files": ["src/index.tsx"],
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "src/**/*.test*"]
+  "exclude": ["node_modules", "src/**/*.test*", "demo"]
 }

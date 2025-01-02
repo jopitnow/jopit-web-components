@@ -20,10 +20,12 @@ export { default as Select } from "./select/standard/Select";
 
 export { default as FilterSelect } from "./select/filter/FilterSelect";
 
-export { SelectOption } from "./select/standard/Select";
+export { default as SelectOption } from "./select/standard/Select";
 
 export { default as AlertDialog } from "./dialog/alert/AlertDialog";
 
-export { DialogType } from "./dialog/alert/AlertDialog";
+export { default as DialogType } from "./dialog/alert/AlertDialog";
 
 export { default as Header } from "./header/Header";
+
+export { default as ErrorScreen } from "./error/ErrorScreen";

@@ -1,9 +1,9 @@
 import React from "react";
 import './AlertDialog.css';
-import successIcon from "/assets/images/dialog/jopit_success.webp"
-import infoIcon from "/assets/images/dialog/jopit_info.webp"
-import warningIcon from "/assets/images/dialog/jopit_warning.webp"
-import errorIcon from "/assets/images/dialog/jopit_error.webp"
+import successIcon from "../../../assets/images/dialog/jopit_success.webp"
+import infoIcon from "../../../assets/images/dialog/jopit_info.webp"
+import warningIcon from "../../../assets/images/dialog/jopit_warning.webp"
+import errorIcon from "../../../assets/images/dialog/jopit_error.webp"
 
 export enum DialogType {
     Success,

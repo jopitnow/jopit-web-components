@@ -14,5 +14,11 @@ export const resources = {
     textInput: {
         passwordHiddenAlt: "Ocultar contraseña",
         passwordShownAlt: "Mostrar contraseña",
+    },
+    error: {
+        errorIconAlt: "¡Ups! Parece que hubo un problema.",
+        errorTitle: "¡Ups! Parece que hubo un problema.",
+        errorDescription: "No podemos cargar esta página en este momento. Por favor, intentá nuevamente.",
+        errorRetryLabel: "Reintentar",
     }
 };

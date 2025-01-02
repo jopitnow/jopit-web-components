@@ -1,6 +1,6 @@
 import React from "react";
-import redLogo from "/assets/images/logo/jopit_icon_red.svg"
-import whiteLogo from "/assets/images/logo/jopit_icon_white.svg"
+import redLogo from "../../assets/images/logo/jopit_icon_red.svg"
+import whiteLogo from "../../assets/images/logo/jopit_icon_white.svg"
 import './Logo.css';
 import {resources} from "../resources";
 

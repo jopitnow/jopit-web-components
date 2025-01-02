@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './PasswordTextInput.css';
-import suffixIcon from "/assets/images/password/password_hidden_icon.webp";
+import suffixIcon from "../../../assets/images/password/password_hidden_icon.webp";
 import {resources} from "../../resources";
 
 type TextInputProps = {

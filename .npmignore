@@ -1,10 +1,13 @@
 .idea/
 .husky/
+.github/
 assets/
 src/
+demo/
 node_modules/
 *.test.*
 tsconfig.json
 .prettierignore
 .eslintrc
 .webpack.config.js
+.vite.config.ts
