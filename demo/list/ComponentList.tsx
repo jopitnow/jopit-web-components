@@ -10,7 +10,7 @@ export default function ComponentList() {
             <div className="Component_List_Container">
                 <p className="Component_List_Title">Jopit Web Components</p>
                 <p className="Component_List_Subtitle">Buttons</p>
-                <ComponentButton text={"Button"} path={"/button/standard"}/>
+                <ComponentButton text={"Button"} path={"/button"}/>
                 <ComponentButton text={"Middle Button"} path={"/button/middle"}/>
                 <p className="Component_List_Subtitle">Checkbox</p>
                 <ComponentButton text={"Checkbox"} path={"/checkbox"}/>
