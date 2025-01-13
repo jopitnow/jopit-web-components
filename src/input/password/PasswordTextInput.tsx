@@ -7,7 +7,7 @@ type TextInputProps = {
     title: string;
     placeholder: string;
     value: string | ReadonlyArray<string> | number;
-    autoComplete?: never;
+    autoComplete?: string;
     onKeyDown?: (e) => void;
     onTextChange: (e) => void;
 };

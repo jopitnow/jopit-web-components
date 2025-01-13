@@ -6,7 +6,7 @@ type TextInputProps = {
     placeholder: string;
     value: string | ReadonlyArray<string> | number;
     type?: HTMLInputTypeAttribute;
-    autoComplete?: never;
+    autoComplete?: string;
     onKeyDown?: (e) => void;
     onTextChange: (e) => void;
 };
