@@ -16,15 +16,11 @@ export { default as Button } from "./button/standard/Button";
 
 export { default as Checkbox } from "./checkbox/Checkbox";
 
-export { default as Select } from "./select/standard/Select";
+export { default as Select, SelectOption } from "./select/standard/Select";
 
 export { default as FilterSelect } from "./select/filter/FilterSelect";
 
-export { default as SelectOption } from "./select/standard/Select";
-
-export { default as AlertDialog } from "./dialog/alert/AlertDialog";
-
-export { default as DialogType } from "./dialog/alert/AlertDialog";
+export { default as AlertDialog, DialogType } from "./dialog/alert/AlertDialog";
 
 export { default as Header } from "./header/Header";
 

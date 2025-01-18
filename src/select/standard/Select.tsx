@@ -3,7 +3,7 @@ import './Select.css';
 import {resources} from "../../resources";
 
 export type SelectOption = {
-    value: number,
+    value: string | number,
     label: string
 }
 

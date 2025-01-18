@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './FilterSelect.css';
 import {Select} from "../../../../src";
-import {SelectOption} from "../../../../src/select/standard/Select";
+import {SelectOption} from "../../../../src";
 
 export default function FilterSelectScreen() {
     const [category, setCategory] = useState("")

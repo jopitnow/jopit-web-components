@@ -1,7 +1,7 @@
 import React from "react";
 import './AlertDialog.css';
 import {AlertDialog} from "../../../../src";
-import {DialogType} from "../../../../src/dialog/alert/AlertDialog";
+import {DialogType} from "../../../../src";
 
 export default function AlertDialogScreen() {
     const onAgreeClick = () => {
