@@ -6,17 +6,27 @@ import {resources} from "../resources";
 type HeaderProps = {
     title: string;
     description: string;
+    onBack?: () => void;
     isBackEnabled?: boolean;
 };
 
 export default function Header(props: HeaderProps) {
+
+    const onBackClick = () => {
+        if (props.onBack) {
+            props.onBack()
+        } else {
+            history.back()
+        }
+    }
+
     return (
         <div className="Shop_Header">
             <p className="Shop_Header_Title">{props.title}</p>
             <p className="Shop_Header_Description">{props.description}</p>
             {
                 props.isBackEnabled &&
-                    <button className="Shop_Header_Back_Container" onClick={() => history.back()}>
+                    <button className="Shop_Header_Back_Container" onClick={onBackClick}>
                         <img className="Shop_Header_Back_Image" src={backIcon} alt={resources.header.backIconAlt}/>
                         <p className="Shop_Header_Back_Text">{resources.header.backText}</p>
                     </button>
