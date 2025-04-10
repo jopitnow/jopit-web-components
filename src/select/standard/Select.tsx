@@ -8,7 +8,7 @@ export type SelectOption = {
 }
 
 type SelectProps = {
-    title: string,
+    title?: string,
     placeholder: string,
     options: ReadonlyArray<SelectOption>
     value?: string | ReadonlyArray<string> | number,
