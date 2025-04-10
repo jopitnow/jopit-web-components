@@ -5,7 +5,7 @@ import {resources} from "../resources";
 
 type HeaderProps = {
     title: string;
-    description: (string | JSX.Element)[];
+    description: string | (string | JSX.Element)[];
     onBack?: () => void;
     isBackEnabled?: boolean;
 };
