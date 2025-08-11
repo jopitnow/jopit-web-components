@@ -1,6 +1,7 @@
 .Alert_Dialog {
     display: flex;
     flex-direction: column;
+    background: white;
 }
 
 .Alert_Dialog_Decoration {

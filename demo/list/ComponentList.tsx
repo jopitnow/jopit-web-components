@@ -42,19 +42,11 @@ export default function ComponentList() {
         },
         {
             id: "select",
-            name: "Select",
+            name: "Text Select",
             category: "selectors",
-            path: "/select/standard",
-            icon: "📋",
-            description: "Selector desplegable con animaciones suaves"
-        },
-        {
-            id: "filter-select",
-            name: "Filter Select",
-            category: "selectors",
-            path: "/select/filter",
+            path: "/select",
             icon: "🔽",
-            description: "Selector avanzado con filtrado integrado"
+            description: "Campos de selección de texto con múltiples configuraciones."
         },
         {
             id: "alert-dialog",
@@ -63,6 +55,14 @@ export default function ComponentList() {
             path: "/alertdialog",
             icon: "⚠️",
             description: "Diálogo de alerta con botones de acción"
+        },
+        {
+            id: "alert-dialog-showcase",
+            name: "AlertDialog Showcase",
+            category: "dialogs",
+            path: "/alertdialog/showcase",
+            icon: "🎭",
+            description: "Demostración completa del AlertDialog con todas sus variantes"
         },
         {
             id: "header",
