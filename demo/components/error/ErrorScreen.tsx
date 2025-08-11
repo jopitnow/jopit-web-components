@@ -1,10 +1,11 @@
 import React from "react";
 import './ErrorScreen.css';
+import {ErrorScreen} from "../../../src";
 
-export default function ErrorScreen() {
+export default function ErrorScreenDemo() {
     return (
         <div>
-
+            <ErrorScreen/>
         </div>
     )
 }
