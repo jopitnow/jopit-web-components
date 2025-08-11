@@ -3,6 +3,7 @@ import './SearchTextInput.css';
 import prefixIcon from "../../../assets/images/search/jopit_search.webp";
 
 type TextInputProps = {
+    title?: string;
     placeholder: string;
     value: string | ReadonlyArray<string> | number;
     type?: HTMLInputTypeAttribute;
@@ -12,10 +13,15 @@ type TextInputProps = {
 
 export default function SearchTextInput(props: TextInputProps) {
     return (
-        <div className="Search_Text_Input">
-            <img className="Search_Text_Input_Image" src={prefixIcon} alt={null}/>
+        <div className="Text_Search">
+            {props.title && (
+                <div className="Text_Search_Title">
+                    {props.title}
+                </div>
+            )}
+            <img className="Text_Search_Prefix_Icon" src={prefixIcon} alt="Buscar"/>
             <input
-                className="Search_Text_Input_Text"
+                className="Text_Search_Text"
                 type={props.type}
                 placeholder={props.placeholder}
                 value={props.value}

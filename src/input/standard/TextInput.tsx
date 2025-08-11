@@ -14,7 +14,11 @@ type TextInputProps = {
 export default function TextInput(props: TextInputProps) {
     return (
         <div className="Text_Input">
-            <p className="Text_Input_Title">{props.title}</p>
+            {props.title && (
+                <div className="Text_Input_Title">
+                    {props.title}
+                </div>
+            )}
             <input
                 className="Text_Input_Text"
                 type={props.type}

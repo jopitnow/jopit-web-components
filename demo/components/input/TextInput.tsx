@@ -57,7 +57,6 @@ export default function StandardTextInputScreen() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        console.log(" formulario completo:", formValues);
     };
 
     const BasicInputs = () => (

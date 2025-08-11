@@ -16,7 +16,11 @@ type TextAreaProps = {
 export default function TextArea(props: TextAreaProps) {
     return (
         <div className="Text_Area">
-            <p className="Text_Area_Title">{props.title}</p>
+            {props.title && (
+                <div className="Text_Area_Title">
+                    {props.title}
+                </div>
+            )}
             <textarea
                 className="Text_Area_Text"
                 placeholder={props.placeholder}

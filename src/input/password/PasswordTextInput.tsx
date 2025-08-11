@@ -20,23 +20,27 @@ export default function PasswordTextInput(props: TextInputProps) {
     };
 
     return (
-        <div className="Password_Text_Input_Container">
-            <p className="Password_Text_Input_Title">{props.title}</p>
+        <div className="Text_Password">
+            {props.title && (
+                <div className="Text_Password_Title">
+                    {props.title}
+                </div>
+            )}
             <input
-                className="Password_Text_Input_Text"
+                className="Text_Password_Text"
                 type={isPasswordVisible ? "text" : "password"}
                 autoComplete={props.autoComplete}
                 placeholder={props.placeholder}
                 value={props.value}
                 onKeyDown={props.onKeyDown}
                 onChange={props.onTextChange}/>
-            <button className="Password_Text_Input_Suffix_Button" onClick={togglePasswordVisibility}>
+            <button className="Text_Password_Suffix_Button" onClick={togglePasswordVisibility}>
                 <img
-                    className="Password_Text_Input_Suffix_Icon"
+                    className="Text_Password_Suffix_Icon"
                     src={suffixIcon}
                     alt={isPasswordVisible ? resources.textInput.passwordHiddenAlt : resources.textInput.passwordShownAlt}
                 />
-                <div hidden={!isPasswordVisible} className="Password_Text_Input_Suffix_Icon_Line"/>
+                <div hidden={!isPasswordVisible} className="Text_Password_Suffix_Icon_Line"/>
             </button>
         </div>
     )
