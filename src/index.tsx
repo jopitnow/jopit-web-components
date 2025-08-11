@@ -16,7 +16,9 @@ export { default as Button } from "./button/standard/Button";
 
 export { default as Checkbox } from "./checkbox/Checkbox";
 
-export { default as Select, SelectOption } from "./select/standard/Select";
+export { default as Select } from "./select/standard/Select";
+
+export type { SelectOption } from "./select/standard/Select";
 
 export { default as FilterSelect } from "./select/filter/FilterSelect";
 
