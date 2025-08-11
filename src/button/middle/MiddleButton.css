@@ -5,6 +5,8 @@
     background: #FF5656;
     border-radius: 4px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -31,6 +33,16 @@
 
 .Middle_Button:hover {
     background: #e04c4c;
+}
+
+.Middle_Button:disabled {
+    background: #FF8C8C;
+    cursor: auto;
+    box-shadow: none;
+}
+
+.Middle_Button:disabled:hover {
+    background: #FF8C8C;
 }
 
 @media screen and (max-width: 481px) {

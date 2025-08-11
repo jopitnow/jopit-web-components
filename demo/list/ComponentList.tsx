@@ -18,27 +18,11 @@ export default function ComponentList() {
     const components: ComponentItem[] = [
         {
             id: "button",
-            name: "Button",
+            name: "Buttons",
             category: "buttons",
             path: "/button",
             icon: "🔘",
-            description: "Botones con diferentes estilos y tamaños"
-        },
-        {
-            id: "middle-button",
-            name: "Middle Button",
-            category: "buttons",
-            path: "/button/middle",
-            icon: "🎯",
-            description: "Botón con estilo intermedio para acciones importantes"
-        },
-        {
-            id: "compact-button",
-            name: "Compact Button",
-            category: "buttons",
-            path: "/button",
-            icon: "⚡",
-            description: "Botón compacto para espacios reducidos"
+            description: "Showcase completo de componentes Button con múltiples configuraciones"
         },
         {
             id: "checkbox",

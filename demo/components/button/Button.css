@@ -1,0 +1,165 @@
+.Button_Showcase-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ea6666 0%, #a24b4b 100%);
+    padding: 40px 32px;
+    font-family: Quicksand, sans-serif;
+}
+
+.Button_Showcase-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.Button_Showcase-main-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 16px 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Button_Showcase-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.Button_Showcase-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Button_Showcase-section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 32px;
+    margin-bottom: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.Button_Showcase-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 12px 0;
+}
+
+.Button_Showcase-description {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 32px 0;
+    line-height: 1.6;
+}
+
+.Button_Showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.Button_Showcase-demo-item {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    border: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.Button_Showcase-demo-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: #ea6666;
+}
+
+.Button_Showcase-demo-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.Button_Showcase-footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 32px;
+    margin-top: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Button_Showcase-activity h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 16px 0;
+}
+
+.Button_Showcase-activity p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.Button_Showcase-clicked {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .Button_Showcase-container {
+        padding: 24px 20px;
+    }
+    
+    .Button_Showcase-header {
+        padding: 30px 20px;
+    }
+    
+    .Button_Showcase-main-title {
+        font-size: 36px;
+    }
+    
+    .Button_Showcase-subtitle {
+        font-size: 18px;
+    }
+    
+    .Button_Showcase-section {
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .Button_Showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .Button_Showcase-footer {
+        padding: 24px;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Button_Showcase-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}

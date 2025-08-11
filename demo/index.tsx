@@ -5,8 +5,7 @@ import "../src/index.css"
 
 import ComponentList from "./list/ComponentList";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Button from "./components/button/standard/Button";
-import MiddleButton from "./components/button/middle/MiddleButton";
+import Button from "./components/button/Button";
 import Checkbox from "./components/checkbox/Checkbox";
 import AlertDialog from "./components/dialog/alert/AlertDialog";
 import ErrorScreen from "./components/error/ErrorScreen";
@@ -24,9 +23,9 @@ const root = document.getElementById("root")
 const router = <BrowserRouter>
     <Routes>
         <Route path="/" element={<ComponentList />} />
-        {/* Buttons */}
+        
+        {/* Buttons - unified showcase */}
         <Route path="/button" element={<Button />} />
-        <Route path="/button/middle" element={<MiddleButton />} />
 
         {/* Checkbox */}
         <Route path="/checkbox" element={<Checkbox />} />
