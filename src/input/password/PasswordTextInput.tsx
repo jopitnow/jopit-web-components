@@ -4,10 +4,10 @@ import suffixIcon from "../../../assets/images/password/password_hidden_icon.web
 import {resources} from "../../resources";
 
 type TextInputProps = {
-    title: string;
+    title?: string;
     placeholder: string;
     value: string | ReadonlyArray<string> | number;
-    autoComplete?: never;
+    autoComplete?: string;
     onKeyDown?: (e) => void;
     onTextChange: (e) => void;
 };

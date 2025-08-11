@@ -1,0 +1,127 @@
+.Header_Showcase-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    padding: 40px 32px;
+    font-family: Quicksand, sans-serif;
+}
+
+.Header_Showcase-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.Header_Showcase-main-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 16px 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Header_Showcase-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.Header_Showcase-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.Header_Showcase-section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 32px;
+    margin-bottom: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.Header_Showcase-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 12px 0;
+}
+
+.Header_Showcase-description {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 32px 0;
+    line-height: 1.6;
+}
+
+.Header_Showcase-demo-full {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    border: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.Header_Showcase-demo-full:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: #ff6b6b;
+}
+
+.Header_Showcase-demo-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .Header_Showcase-container {
+        padding: 24px 20px;
+    }
+    
+    .Header_Showcase-header {
+        padding: 30px 20px;
+    }
+    
+    .Header_Showcase-main-title {
+        font-size: 36px;
+    }
+    
+    .Header_Showcase-subtitle {
+        font-size: 18px;
+    }
+    
+    .Header_Showcase-section {
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .Header_Showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .Header_Showcase-footer {
+        padding: 24px;
+        margin-top: 30px;
+    }
+    
+    .Header_Showcase-user-info,
+    .Header_Showcase-product-info,
+    .Header_Showcase-order-info {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}

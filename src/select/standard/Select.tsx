@@ -1,24 +1,25 @@
-import React from "react";
+import React, {useRef} from "react";
 import './Select.css';
 import {resources} from "../../resources";
 
 export type SelectOption = {
-    value: number,
+    value: string | number,
     label: string
 }
 
 type SelectProps = {
-    id: string,
-    title: string,
+    title?: string,
     placeholder: string,
     options: ReadonlyArray<SelectOption>
     value?: string | ReadonlyArray<string> | number,
-    isLoading: boolean,
-    isDisabled: boolean,
+    isLoading?: boolean,
+    isDisabled?: boolean,
     onChange: (e) => void;
 };
 
 export default function Select(props: SelectProps) {
+    const arrow = useRef<HTMLDivElement | null>(null);
+
     return (
         <div id="select" className="Select">
             <p className="Select_Title">{props.title}</p>
@@ -33,8 +34,8 @@ export default function Select(props: SelectProps) {
                         disabled={props.isDisabled}
                         value={props.value || ""}
                         onChange={props.onChange}
-                        onFocus={() => onFocus(props.id)}
-                        onBlur={() =>  onBlur(props.id)}>
+                        onFocus={() => onFocus(arrow)}
+                        onBlur={() =>  onBlur(arrow)}>
                         <DefaultOption placeholder={props?.placeholder}/>
                         {props.options?.map((option) => (
                             <option key={option.value} value={option.value}>
@@ -43,7 +44,7 @@ export default function Select(props: SelectProps) {
                         ))}
                     </select>
             }
-            <div id={props.id + "_arrow"} className="Select_Arrow"/>
+            <div ref={arrow} className="Select_Arrow" />
         </div>
     )
 }
@@ -60,16 +61,16 @@ function DefaultOption(props: DefaultOptionProps) {
     )
 }
 
-export function onFocus(id: string) {
-    const arrow = document.getElementById(id + "_arrow");
-
-    arrow.style.borderLeft = "2px solid #777777"
-    arrow.style.borderBottom = "2px solid #777777"
+export function onFocus(arrow: React.RefObject<HTMLDivElement>) {
+    if (arrow.current) {
+        arrow.current.style.borderLeft = "2px solid #777777";
+        arrow.current.style.borderBottom = "2px solid #777777";
+    }
 }
 
-export function onBlur(id: string) {
-    const arrow = document.getElementById(id + "_arrow");
-
-    arrow.style.borderLeft = "2px solid #CCCCCC"
-    arrow.style.borderBottom = "2px solid #CCCCCC"
+export function onBlur(arrow: React.RefObject<HTMLDivElement>) {
+    if (arrow.current) {
+        arrow.current.style.borderLeft = "2px solid #CCCCCC";
+        arrow.current.style.borderBottom = "2px solid #CCCCCC";
+    }
 }

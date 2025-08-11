@@ -1,20 +1,21 @@
-import React from "react";
+import React, {useRef} from "react";
 import './FilterSelect.css';
 import "skeleton-screen-css"
 import {DefaultOptionProps, onBlur, onFocus, SelectOption} from "../standard/Select";
 import {resources} from "../../resources";
 
 type SelectProps = {
-    id: string,
     placeholder: string,
     options: ReadonlyArray<SelectOption>
     value?: string | ReadonlyArray<string> | number,
-    isLoading: boolean,
-    isDisabled: boolean,
+    isLoading?: boolean,
+    isDisabled?: boolean,
     onChange: (e) => void;
 };
 
 export default function FilterSelect(props: SelectProps) {
+    const arrow = useRef<HTMLDivElement | null>(null);
+
     return (
         <div id="select" className="Filter_Select">
             {
@@ -28,8 +29,8 @@ export default function FilterSelect(props: SelectProps) {
                         disabled={props.isDisabled}
                         value={props.value || ""}
                         onChange={props.onChange}
-                        onFocus={() => onFocus(props.id)}
-                        onBlur={() =>  onBlur(props.id)}>
+                        onFocus={() => onFocus(arrow)}
+                        onBlur={() =>  onBlur(arrow)}>
                         <DefaultOption placeholder={props?.placeholder}/>
                         {props.options?.map((option) => (
                             <option key={option.value} value={option.value}>
@@ -38,7 +39,7 @@ export default function FilterSelect(props: SelectProps) {
                         ))}
                     </select>
             }
-            <div id={props.id + "_arrow"} className="Filter_Select_Arrow"/>
+            <div ref={arrow} className="Filter_Select_Arrow" />
         </div>
     )
 }

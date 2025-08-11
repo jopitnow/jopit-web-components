@@ -2,7 +2,7 @@ import React from "react";
 import './TextArea.css';
 
 type TextAreaProps = {
-    title: string;
+    title?: string;
     placeholder: string;
     value: string | ReadonlyArray<string> | number;
     cols?: number;

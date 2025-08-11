@@ -44,6 +44,7 @@ type DialogProps = {
 };
 
 export default function AlertDialog(props: DialogProps) {
+    console.log(props)
     return (
         <div className="Alert_Dialog">
             <div className="Alert_Dialog_Decoration" style={{background: colors[props.type]}}/>
