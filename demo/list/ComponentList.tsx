@@ -22,7 +22,7 @@ export default function ComponentList() {
             category: "buttons",
             path: "/button",
             icon: "🔘",
-            description: "Showcase completo de componentes Button con múltiples configuraciones"
+            description: "Botones con múltiples configuraciones"
         },
         {
             id: "checkbox",
@@ -34,35 +34,11 @@ export default function ComponentList() {
         },
         {
             id: "text-input",
-            name: "Text Input",
+            name: "Text Inputs",
             category: "forms",
-            path: "/input/standard",
+            path: "/input",
             icon: "📝",
-            description: "Campo de texto estándar con validación"
-        },
-        {
-            id: "password-input",
-            name: "Password Input",
-            category: "forms",
-            path: "/input/password",
-            icon: "🔒",
-            description: "Campo de contraseña con toggle visibilidad"
-        },
-        {
-            id: "search-input",
-            name: "Search Input",
-            category: "forms",
-            path: "/input/search",
-            icon: "🔍",
-            description: "Campo de búsqueda con historial y sugerencias"
-        },
-        {
-            id: "text-area",
-            name: "Text Area",
-            category: "forms",
-            path: "/input/area",
-            icon: "📄",
-            description: "Área de texto multilínea para grandes contenidos"
+            description: "Campos de texto con múltiples configuraciones."
         },
         {
             id: "select",
