@@ -6,8 +6,8 @@ export default function AlertDialogShowcaseScreen() {
     const [activeDialog, setActiveDialog] = useState<DialogType | null>(null);
     const [dialogTitle, setDialogTitle] = useState("");
     const [dialogDescription, setDialogDescription] = useState("");
-    const [disagreeText, setDisagreeText] = useState("Cancelar");
-    const [agreeText, setAgreeText] = useState("Aceptar");
+    const [disagreeText, setDisagreeText] = useState("");
+    const [agreeText, setAgreeText] = useState("");
 
     const handleDialogClick = (type: DialogType) => {
         setActiveDialog(type);
@@ -227,7 +227,6 @@ export default function AlertDialogShowcaseScreen() {
         </div>
     );
 
-    // Actualizar los títulos y descripciones cuando active un diálogo
     useEffect(() => {
         if (activeDialog !== null) {
             const typeConfigs = {
@@ -253,9 +252,6 @@ export default function AlertDialogShowcaseScreen() {
                 setDialogTitle(typeConfigs[activeDialog].title);
                 setDialogDescription(typeConfigs[activeDialog].description);
             }
-            
-            setDisagreeText(dialogTitle ? "Cancelar" : "Cerrar");
-            setAgreeText(dialogTitle ? "Aceptar" : "OK");
         }
     }, [activeDialog, dialogTitle, dialogDescription]);
 

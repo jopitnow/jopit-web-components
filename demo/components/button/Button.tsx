@@ -79,28 +79,28 @@ export default function StandardButtonScreen() {
                     className="Button_Showcase-demo-item"
                     onClick={() => handleButtonClick("custom-success")}>
                     <div className="Button_Showcase-demo-label">Custom Success</div>
-                    <Button text="Success" onClick={handleButtonClick} background="demo/components/button/Button#25B45A" />
+                    <Button text="Success" onClick={handleButtonClick} background="#25B45A" />
                 </button>
                 
                 <button
                     className="Button_Showcase-demo-item"
                     onClick={() => handleButtonClick("custom-warning")}>
                     <div className="Button_Showcase-demo-label">Custom Warning</div>
-                    <Button text="Warning" onClick={handleButtonClick} background="demo/components/button/Button#FFB800" />
+                    <Button text="Warning" onClick={handleButtonClick} background="#FFB800" />
                 </button>
                 
                 <button
                     className="Button_Showcase-demo-item"
                     onClick={() => handleButtonClick("custom-info")}>
                     <div className="Button_Showcase-demo-label">Custom Info</div>
-                    <Button text="Info" onClick={handleButtonClick} background="demo/components/button/Button#3498DB" />
+                    <Button text="Info" onClick={handleButtonClick} background="#3498DB" />
                 </button>
                 
                 <button
                     className="Button_Showcase-demo-item"
                     onClick={() => handleButtonClick("custom-danger")}>
                     <div className="Button_Showcase-demo-label">Custom Danger</div>
-                    <Button text="Danger" onClick={handleButtonClick} background="demo/components/button/Button#FF5656" />
+                    <Button text="Danger" onClick={handleButtonClick} background="#FF5656" />
                 </button>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { Button, SearchTextInput } from "../../src";
+import {Button, Logo, SearchTextInput} from "../../src";
 import "./ComponentList.css"
 
 interface ComponentItem {
@@ -30,7 +30,7 @@ export default function ComponentList() {
             category: "forms",
             path: "/checkbox",
             icon: "☑️",
-            description: "Componente de selección con estilo moderno"
+            description: "Checkbox con múltiples configuraciones"
         },
         {
             id: "text-input",
@@ -46,7 +46,7 @@ export default function ComponentList() {
             category: "selectors",
             path: "/select",
             icon: "🔽",
-            description: "Campos de selección de texto con múltiples configuraciones."
+            description: "Selección de texto con múltiples configuraciones."
         },
         {
             id: "alert-dialog",
@@ -57,28 +57,12 @@ export default function ComponentList() {
             description: "Diálogo de alerta con botones de acción"
         },
         {
-            id: "alert-dialog-showcase",
-            name: "AlertDialog Showcase",
-            category: "dialogs",
-            path: "/alertdialog/showcase",
-            icon: "🎭",
-            description: "Demostración completa del AlertDialog con todas sus variantes"
-        },
-        {
             id: "header",
             name: "Header",
             category: "layout",
             path: "/header",
             icon: "📑",
             description: "Componente de navegación con responsive design"
-        },
-        {
-            id: "logo",
-            name: "Logo",
-            category: "layout",
-            path: "/logo",
-            icon: "🎨",
-            description: "Componente visual de marca con animaciones"
         },
         {
             id: "error-screen",
@@ -120,6 +104,7 @@ export default function ComponentList() {
         <div className="Component_List">
             <div className="Component_List_Header">
                 <div className="Component_List_Header_Content">
+                    <Logo isWhite={true} />
                     <h1 className="Component_List_Title">Jopit Web Components</h1>
                     <p className="Component_List_Subtitle">
                         {filteredComponents.length} componentes disponibles
@@ -131,7 +116,7 @@ export default function ComponentList() {
                 <SearchTextInput
                     placeholder="Buscar componentes..."
                     value={searchTerm}
-                    onTextChange={handleSearchChange}
+                    onTextChange={(e) => handleSearchChange(e.target.value)}
                 />
             </div>
 

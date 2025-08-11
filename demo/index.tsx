@@ -10,7 +10,7 @@ import TextInput from "./components/input/TextInput";
 import Checkbox from "./components/checkbox/Checkbox";
 import AlertDialog from "./components/dialog/AlertDialog";
 import Header from "./components/header/Header";
-import Logo from "./components/logo/Logo";
+import HeaderShowcase from "./components/header/Header";
 import SelectShowcase from "./components/select/Select";
 import {ErrorScreen} from "../src";
 
@@ -40,9 +40,7 @@ const router = <BrowserRouter>
 
         {/* Header */}
         <Route path="/header" element={<Header />} />
-
-        {/* Logo */}
-        <Route path="/logo" element={<Logo />} />
+        <Route path="/header/showcase" element={<HeaderShowcase />} />
     </Routes>
 </BrowserRouter>
 
