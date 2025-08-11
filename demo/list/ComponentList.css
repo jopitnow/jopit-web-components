@@ -1,13 +1,13 @@
-.root {
-    height: 100%;
+#root {
+    height: 100% !important;
+    overflow-y: auto !important;
 }
 
 .Component_List {
-    height: 100%;
+    min-height: 100%;
     background: linear-gradient(135deg, #ea6666 0%, #a24b4b 100%);
     padding: 32px;
     font-family: Quicksand, sans-serif;
-    overflow-y: scroll;
 }
 
 .Component_List_Header {
@@ -259,23 +259,4 @@
     .Component_List_Grid {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
-}
-
-/* Scrollbar styling */
-.Component_List::-webkit-scrollbar {
-    width: 8px;
-}
-
-.Component_List::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
-
-.Component_List::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-}
-
-.Component_List::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.5);
 }
