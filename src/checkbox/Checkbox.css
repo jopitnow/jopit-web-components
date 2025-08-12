@@ -5,26 +5,30 @@
 
 .Checkbox {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     margin: 0;
     padding: 0;
     background-color: white;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: 2px solid #EEEEEE;
-    border-radius: 2px;
-    transition: border 150ms ease-in-out;
+    border: 2px solid #eeeeee;
+    border-radius: 6px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .Checkbox:hover {
-    border: 2px solid #AAAAAA;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .Checkbox:checked {
     background-color: #FF5656;
     border: 2px solid #FF5656;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(180, 37, 37, 0.15);
 }
 
 .Checkmark {
@@ -32,31 +36,36 @@
     position: absolute;
     height: 12px;
     width: 12px;
-    left: 4px;
+    left: 5px;
     top: 4px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 1025px) {
     .Checkbox {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
     }
 
     .Checkmark {
         height: 10px;
         width: 10px;
+        left: 5px;
     }
 }
 
 
 @media screen and (max-width: 481px) {
     .Checkbox {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
     }
 
     .Checkmark {
         height: 8px;
         width: 8px;
+        left: 5px;
     }
 }
