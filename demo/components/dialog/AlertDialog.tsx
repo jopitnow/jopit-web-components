@@ -275,9 +275,9 @@ export default function AlertDialogShowcaseScreen() {
                         type={activeDialog}
                         title={dialogTitle}
                         description={dialogDescription}
-                        disagreeText={disagreeText}
+                        disagreeText={disagreeText ? disagreeText : "Cancelar"}
                         onDisagreeClick={handleDisagreeClick}
-                        agreeText={agreeText}
+                        agreeText={agreeText ? agreeText : "Aceptar"}
                         onAgreeClick={handleAgreeClick}/>
                 </div>
             )}
