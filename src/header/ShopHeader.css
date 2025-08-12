@@ -1,102 +1,161 @@
 .Shop_Header {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding: 48px;
+    gap: 8px;
+    padding: 32px 24px;
     justify-content: center;
-    background: #FFFFFF;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.Shop_Header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ffae00 0%, #b4255c 25%, #f849b2 50%, #FF5656 75%, #FFB800 100%);
+    background-size: 200% 100%;
+    animation: gradientShift 8s ease infinite;
+    border-radius: 20px 20px 0 0;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .Shop_Header_Title {
     margin: 0 auto;
-    font-family: Quicksand, serif;
+    font-family: Quicksand, sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #333333;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #1a1a1a;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .Shop_Header_Description {
     width: 480px;
+    max-width: 90%;
     margin: 0 auto;
-    font-family: Quicksand, serif;
+    font-family: Quicksand, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
-    color: #333333;
+    line-height: 24px;
+    color: #666666;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .Shop_Header_Back_Container {
     position: absolute;
     display: flex;
     flex-direction: row;
-    background: none;
-    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    padding: 8px 12px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.Shop_Header_Back_Container:hover {
+    background: rgba(180, 37, 37, 0.1);
+    border-color: rgba(180, 37, 37, 0.2);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.Shop_Header_Back_Container:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.Shop_Header_Back_Container:hover .Shop_Header_Back_Image {
+    transform: translateX(-2px);
 }
 
 .Shop_Header_Back_Image {
-    width: 24px;
-    height: 24px;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .Shop_Header_Back_Text {
-    font-family: Quicksand, serif;
+    font-family: Quicksand, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 18px;
     text-align: center;
-    color: #333333;
+    color: #666666;
     margin: 0;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 1201px) {
     .Shop_Header {
-        gap: 8px;
+        padding: 28px 20px;
+        border-radius: 18px;
     }
 
     .Shop_Header_Title {
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .Shop_Header_Description {
         width: 400px;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 22px;
     }
 
     .Shop_Header_Back_Container {
-        gap: 8px;
+        padding: 6px 10px;
     }
 
     .Shop_Header_Back_Image {
-        width: 24px;
-        height: 24px;
+        width: 12px;
+        height: 12px;
     }
 
     .Shop_Header_Back_Text {
         display: none;
     }
+
+    .Shop_Header_Back_Container:hover .Shop_Header_Back_Image {
+        transform: none;
+    }
 }
 
 @media screen and (max-width: 1025px) {
-    .Shop_Header_Description {
-        width: 360px;
-        font-size: 15px;
-        line-height: 17px;
+    .Shop_Header {
+        border-radius: 16px;
     }
 
-    .Shop_Header_Back_Image {
-        width: 20px;
-        height: 20px;
+    .Shop_Header_Description {
+        width: 360px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
@@ -117,7 +176,7 @@
     }
 
     .Shop_Header_Back_Container {
-        display: none;
+        left: 12px;
     }
 }
 
@@ -136,5 +195,11 @@
         width: 240px;
         font-size: 12px;
         line-height: 14px;
+    }
+
+    .Shop_Header_Back_Container {
+
+        top: 12px;
+        left: 8px;
     }
 }
