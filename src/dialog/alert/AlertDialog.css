@@ -2,15 +2,12 @@
     display: flex;
     flex-direction: column;
     background: white;
-    border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.05);
     overflow: hidden;
 }
 
 .Alert_Dialog_Decoration {
     height: 6px;
-    border-radius: 20px 20px 0 0;
     width: 100%;
 }
 
@@ -24,7 +21,6 @@
 .Alert_Dialog_Image {
     width: 48px;
     height: 48px;
-    border-radius: 12px;
     margin: auto;
 }
 
@@ -183,9 +179,6 @@
 }
 
 @media screen and (max-width: 1025px) {
-    .Alert_Dialog {
-        border-radius: 14px;
-    }
 
     .Alert_Dialog_Decoration {
         height: 5px;
@@ -199,7 +192,6 @@
     .Alert_Dialog_Image {
         width: 40px;
         height: 40px;
-        border-radius: 10px;
     }
 
     .Alert_Dialog_Text_Container {
@@ -232,9 +224,6 @@
 }
 
 @media screen and (max-width: 769px) {
-    .Alert_Dialog {
-        border-radius: 12px;
-    }
 
     .Alert_Dialog_Decoration {
         height: 4px;
@@ -248,7 +237,6 @@
     .Alert_Dialog_Image {
         width: 36px;
         height: 36px;
-        border-radius: 8px;
     }
 
     .Alert_Dialog_Text_Container {
@@ -281,9 +269,6 @@
 }
 
 @media screen and (max-width: 481px) {
-    .Alert_Dialog {
-        border-radius: 10px;
-    }
 
     .Alert_Dialog_Decoration {
         height: 3px;
@@ -297,7 +282,6 @@
     .Alert_Dialog_Image {
         width: 32px;
         height: 32px;
-        border-radius: 6px;
     }
 
     .Alert_Dialog_Text_Container {

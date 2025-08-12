@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '../dialog/AlertDialog.css';
 import AlertDialog, {DialogType} from "../../../src/dialog/alert/AlertDialog";
+import {Dialog} from "@mui/material";
 
 export default function AlertDialogShowcaseScreen() {
     const [activeDialog, setActiveDialog] = useState<DialogType | null>(null);
@@ -269,18 +270,16 @@ export default function AlertDialogShowcaseScreen() {
                 <UseCases />
             </div>
 
-            {activeDialog !== null && (
-                <div className="AlertDialog_Showcase-overlay" onClick={handleDisagreeClick}>
-                    <AlertDialog
-                        type={activeDialog}
-                        title={dialogTitle}
-                        description={dialogDescription}
-                        disagreeText={disagreeText ? disagreeText : "Cancelar"}
-                        onDisagreeClick={handleDisagreeClick}
-                        agreeText={agreeText ? agreeText : "Aceptar"}
-                        onAgreeClick={handleAgreeClick}/>
-                </div>
-            )}
+            <Dialog open={activeDialog !== null} onClose={handleDisagreeClick}>
+                <AlertDialog
+                    type={activeDialog}
+                    title={dialogTitle}
+                    description={dialogDescription}
+                    disagreeText={disagreeText ? disagreeText : "Cancelar"}
+                    onDisagreeClick={handleDisagreeClick}
+                    agreeText={agreeText ? agreeText : "Aceptar"}
+                    onAgreeClick={handleAgreeClick}/>
+            </Dialog>
         </div>
     );
 }
