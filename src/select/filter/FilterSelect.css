@@ -1,16 +1,17 @@
 .Filter_Select {
-    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
+    gap: 4px;
 }
 
-.Filter_Select_Input_Skeleton {
+.Filter_Select_Skeleton {
     height: 40px;
-    border: 2px solid #EEEEEE;
-    border-radius: 4px;
-    padding: 0 40px 0 16px;
-    background: #fff;
+    border: 2px solid rgba(102, 126, 234, 0.1);
+    border-radius: 16px;
+    padding: 0 56px 0 20px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
 }
@@ -23,42 +24,94 @@
     background: #ebebeb !important;
 }
 
-.Filter_Select_Input {
-    height: 40px;
-    border: 2px solid #EEEEEE;
-    border-radius: 4px;
-    font-family: Quicksand, serif;
+.Filter_Select_Text {
+    height: 48px;
+    border: 2px solid rgba(102, 126, 234, 0.1);
+    border-radius: 16px;
+    font-family: Quicksand, sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
     color: #333333;
     text-align: left;
-    padding: 0 40px 0 16px;
-    background: #fff;
+    padding: 0 48px 0 20px;
+    text-overflow: ellipsis;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    transition: border 150ms ease-in-out;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
 }
 
-.Filter_Select_Input::placeholder {
-    color: #CCCCCC;
+.Filter_Select_Text::placeholder {
+    color: #666666;
     opacity: 1;
+    font-weight: 400;
+    font-family: Quicksand, sans-serif;
 }
 
-.Filter_Select_Input:hover {
-    border: 2px solid #AAAAAA;
+.Filter_Select_Text:hover {
+    border-color: rgba(234, 102, 102, 0.3);
+    box-shadow: 0 4px 12px rgba(234, 102, 102, 0.12);
+    transform: translateY(-1px);
 }
 
-.Filter_Select_Input:focus {
+.Filter_Select_Text:focus {
     outline: none !important;
-    border: 2px solid #777777;
-    box-shadow: 0 3px 4px rgba(51, 51, 51, 0.05);
-    border-radius: 4px;
+    border-color: #ea6666;
+    box-shadow: 0 0 0 4px rgba(234, 102, 102, 0.1), 0 6px 16px rgba(234, 102, 102, 0.15);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-1px);
 }
 
-.Filter_Select_Input::-webkit-inner-spin-button,
-.Filter_Select_Input::-webkit-outer-spin-button {
+.Filter_Select_Text:disabled {
+    background: rgba(248, 249, 250, 0.8);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #999999;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.Filter_Select_Text:disabled:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    transform: none;
+}
+
+.Filter_Select_Arrow {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    border-left:2px solid #CCCCCC;
+    border-bottom:2px solid #CCCCCC;
+    transform: rotate(-45deg);
+    transition: all 150ms ease-in-out;
+}
+
+.Filter_Select_Text:focus + .Filter_Select_Arrow {
+    transform: translateY(50%) rotate(135deg);
+    border-left:2px solid #ea6666 !important;
+    border-bottom:2px solid #ea6666 !important;
+}
+
+.Filter_Select_Text:hover:not(:disabled) + .Filter_Select_Arrow {
+    border-top-color: #ea6666;
+}
+
+.Filter_Select_Text:focus + .Filter_Select_Select_Arrow,
+.Filter_Select_Text:hover:not(:disabled) + .Filter_Select_Select_Arrow {
+    border-top-color: #ea6666;
+}
+
+.Filter_Select_Text[type=number]::-webkit-inner-spin-button,
+.Filter_Select_Text[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -69,62 +122,56 @@ option[value=""][disabled] {
     display: none;
 }
 
-.Filter_Select_Arrow {
-    position: absolute;
-    right: 16px;
-    top: 12px;
-    width: 8px;
-    height: 8px;
-    pointer-events: none;
-    border-left:2px solid #CCCCCC;
-    border-bottom:2px solid #CCCCCC;
-    transform: rotate(-45deg);
-    transition: all 150ms ease-in-out;
+@media screen and (max-width: 1025px) {
+    .Filter_Select_Skeleton {
+        height: 40px;
+        padding: 0 44px 0 18px;
+        border-radius: 14px;
+    }
+
+    .ssc-square {
+        height: 14px !important;
+    }
+
+    .Filter_Select_Text {
+        height: 44px;
+        font-size: 15px;
+        padding: 0 54px 0 18px;
+        border-radius: 14px;
+    }
+
+    .Filter_Select_Arrow {
+        width: 4px;
+        height: 4px;
+        top: 18px;
+        right: 16px;
+    }
 }
 
-@media screen and (max-width: 1025px) {
-    .Filter_Select_Input {
-        height: 40px;
-        font-size: 13px;
-        padding: 0 8px 0 12px;
+@media screen and (max-width: 481px) {
+    .Filter_Select_Skeleton {
+        height: 32px;
+        padding: 0 52px 0 16px;
+        border-radius: 12px;
     }
 
     .ssc-square {
         height: 13px !important;
     }
 
-    .Filter_Select_Arrow {
-        right: 12px;
-        top: 14px;
-        width: 6px;
-        height: 6px;
-    }
-}
-
-@media screen and (max-width: 481px) {
-    .Filter_Select_Title {
-        font-size: 12px;
-        line-height: 14px;
+    .Filter_Select_Text {
+        height: 36px;
+        font-size: 14px;
+        padding: 0 52px 0 16px;
+        border-radius: 8px;
     }
 
-    .Filter_Select_Input_Skeleton {
-        height: 32px;
-    }
-
-    .ssc-square {
-        height: 12px !important;
-    }
-
-    .Filter_Select_Input {
-        height: 32px;
-        font-size: 12px;
-        padding: 0 12px 0 8px;
+    .Filter_Select_Text:focus {
+        border-radius: 12px;
     }
 
     .Filter_Select_Arrow {
-        right: 12px;
-        bottom: 22px;
-        width: 4px;
-        height: 4px;
+        top: 13px;
+        right: 16px;
     }
 }

@@ -21,21 +21,25 @@ export default function Select(props: SelectProps) {
     const arrow = useRef<HTMLDivElement | null>(null);
 
     return (
-        <div id="select" className="Select">
-            <p className="Select_Title">{props.title}</p>
+        <div className="Select">
+            {props.title && (
+                <div className="Select_Title">
+                    {props.title}
+                </div>
+            )}
             {
                 props?.isLoading ?
-                    <div className="Select_Input_Skeleton">
+                    <div className="Select_Skeleton">
                         <div className="ssc-square"/>
                     </div>
                     :
                     <select
-                        className="Select_Input"
+                        className="Select_Text"
                         disabled={props.isDisabled}
                         value={props.value || ""}
                         onChange={props.onChange}
                         onFocus={() => onFocus(arrow)}
-                        onBlur={() =>  onBlur(arrow)}>
+                        onBlur={() => onBlur(arrow)}>
                         <DefaultOption placeholder={props?.placeholder}/>
                         {props.options?.map((option) => (
                             <option key={option.value} value={option.value}>

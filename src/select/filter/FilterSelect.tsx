@@ -17,20 +17,20 @@ export default function FilterSelect(props: SelectProps) {
     const arrow = useRef<HTMLDivElement | null>(null);
 
     return (
-        <div id="select" className="Filter_Select">
+        <div className="Filter_Select">
             {
                 props?.isLoading ?
-                    <div className="Filter_Select_Input_Skeleton">
+                    <div className="Filter_Select_Skeleton">
                         <div className="ssc-square"/>
                     </div>
                     :
                     <select
-                        className="Filter_Select_Input"
+                        className="Filter_Select_Text"
                         disabled={props.isDisabled}
                         value={props.value || ""}
                         onChange={props.onChange}
                         onFocus={() => onFocus(arrow)}
-                        onBlur={() =>  onBlur(arrow)}>
+                        onBlur={() => onBlur(arrow)}>
                         <DefaultOption placeholder={props?.placeholder}/>
                         {props.options?.map((option) => (
                             <option key={option.value} value={option.value}>
