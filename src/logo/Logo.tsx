@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo/jopit_icon.webp"
+import logo from "../../assets/images/logo/jopit_icon.svg"
 import './Logo.css';
 import {resources} from "../resources";
 
