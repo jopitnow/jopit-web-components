@@ -59,7 +59,9 @@ typings/
 
 # next.js build output
 .next
-dist
+
+dist/*
+!dist/index.js
 
 .firebase
 
