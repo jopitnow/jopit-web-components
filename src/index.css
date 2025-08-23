@@ -41,7 +41,7 @@ button, input, select, option, textarea, img {
     width: 100%;
     background: rgb(0, 0, 0, 0.5);
     border: none;
-    z-index: 1;
+    z-index: 20;
 }
 
 .Side_Menu_Shop_Button {
@@ -56,7 +56,7 @@ button, input, select, option, textarea, img {
     border: none;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 20;
     cursor: pointer;
 }
 
