@@ -8,7 +8,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "index.js",
-        library: "@jopit/web-components",
+        library: "@jopitnow/web-components",
         libraryTarget: "umd",
         globalObject: "this"
     },
