@@ -20,10 +20,10 @@ const icons = {
 };
 
 const colors = {
-    [DialogType.Success]: "#25B45A",
-    [DialogType.Info]: "#497AF8",
-    [DialogType.Warning]: "#FFB800",
-    [DialogType.Error]: "#FF5656",
+    [DialogType.Success]: "#22c55e",
+    [DialogType.Info]: "#3b82f6",
+    [DialogType.Warning]: "#f59e0b",
+    [DialogType.Error]: "#ef4444",
 };
 
 const styles = {
@@ -44,22 +44,23 @@ type DialogProps = {
 };
 
 export default function AlertDialog(props: DialogProps) {
-    console.log(props)
     return (
         <div className="Alert_Dialog">
-            <div className="Alert_Dialog_Decoration" style={{background: colors[props.type]}}/>
-            <div className="Alert_Dialog_Content">
-                <img className="Alert_Dialog_Image" src={icons[props.type]} alt={""}/>
-                <div className="Alert_Dialog_Text_Container">
-                    <p className="Alert_Dialog_Title">{props.title}</p>
-                    <p className="Alert_Dialog_Description">{props.description}</p>
+            <div className="Alert_Dialog_Header">
+                <div
+                    className="Alert_Dialog_Icon_Container"
+                    style={{background: `linear-gradient(135deg, ${colors[props.type]}20 0%, ${colors[props.type]}10 100%)`}}>
+                    <img className="Alert_Dialog_Image" src={icons[props.type]} alt={""}/>
                 </div>
+            </div>
+            <div className="Alert_Dialog_Content">
+                <h2 className="Alert_Dialog_Title">{props.title}</h2>
+                <p className="Alert_Dialog_Description">{props.description}</p>
             </div>
             <div className="Alert_Dialog_Button_Container">
                 <button
                     className="Alert_Dialog_Button Alert_Dialog_Disagree_Button"
-                    onClick={props.onDisagreeClick}
-                    style={{borderColor: colors[props.type], color: colors[props.type]}}>{props.disagreeText}</button>
+                    onClick={props.onDisagreeClick}>{props.disagreeText}</button>
                 <button
                     className={"Alert_Dialog_Button " + (styles[props.type])}
                     onClick={props.onAgreeClick}>{props.agreeText}</button>

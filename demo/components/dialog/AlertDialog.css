@@ -197,6 +197,18 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* MUI Dialog Overrides */
+.MuiDialog-paper {
+    overflow: hidden !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 20px !important;
+}
+
+.MuiDialog-container {
+    backdrop-filter: blur(4px);
+}
+
 /* Modal Overlay */
 .AlertDialog_Showcase-overlay {
     position: fixed;

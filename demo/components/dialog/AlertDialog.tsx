@@ -5,12 +5,14 @@ import {Dialog} from "@mui/material";
 
 export default function AlertDialogShowcaseScreen() {
     const [activeDialog, setActiveDialog] = useState<DialogType | null>(null);
+    const [lastValidType, setLastValidType] = useState<DialogType>(DialogType.Info);
     const [dialogTitle, setDialogTitle] = useState("");
     const [dialogDescription, setDialogDescription] = useState("");
     const [disagreeText, setDisagreeText] = useState("");
     const [agreeText, setAgreeText] = useState("");
 
     const handleDialogClick = (type: DialogType) => {
+        setLastValidType(type);
         setActiveDialog(type);
     };
 
@@ -272,7 +274,7 @@ export default function AlertDialogShowcaseScreen() {
 
             <Dialog open={activeDialog !== null} onClose={handleDisagreeClick}>
                 <AlertDialog
-                    type={activeDialog}
+                    type={lastValidType}
                     title={dialogTitle}
                     description={dialogDescription}
                     disagreeText={disagreeText ? disagreeText : "Cancelar"}
