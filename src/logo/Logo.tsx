@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo/jopit_icon.svg"
+import logo from "../../assets/images/logo/jopit_icon.webp"
 import './Logo.css';
 import {resources} from "../resources";
 
@@ -14,11 +14,6 @@ export default function Logo(props: LogoProps) {
             <img className="Logo_Image"
                 src={logo}
                 alt={resources.logo.iconAlt} />
-            <p className="Logo_Name"
-                style={
-                    props.isWhite ? { color:'#FFFFFF' } : { color:'#FF536C' }
-                }
-            >jopit</p>
         </button>
     )
 }

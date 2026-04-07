@@ -316,7 +316,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Logo)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n/* harmony import */ var _assets_images_logo_jopit_icon_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/logo/jopit_icon.svg */ \"./assets/images/logo/jopit_icon.svg\");\n/* harmony import */ var _Logo_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Logo.css */ \"./src/logo/Logo.css\");\n/* harmony import */ var _resources__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../resources */ \"./src/resources.tsx\");\n\r\n\r\n\r\n\r\nfunction Logo(props) {\r\n    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(\"button\", Object.assign({ className: \"Logo\", onClick: props.onLogoClicked }, { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"img\", { className: \"Logo_Image\", src: _assets_images_logo_jopit_icon_svg__WEBPACK_IMPORTED_MODULE_1__, alt: _resources__WEBPACK_IMPORTED_MODULE_3__.resources.logo.iconAlt }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"p\", Object.assign({ className: \"Logo_Name\", style: props.isWhite ? { color: '#FFFFFF' } : { color: '#FF536C' } }, { children: \"jopit\" }))] })));\r\n}\r\n\n\n//# sourceURL=webpack://@jopitnow/web-components/./src/logo/Logo.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Logo)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n/* harmony import */ var _assets_images_logo_jopit_icon_webp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/logo/jopit_icon.webp */ \"./assets/images/logo/jopit_icon.webp\");\n/* harmony import */ var _Logo_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Logo.css */ \"./src/logo/Logo.css\");\n/* harmony import */ var _resources__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../resources */ \"./src/resources.tsx\");\n\r\n\r\n\r\n\r\nfunction Logo(props) {\r\n    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"button\", Object.assign({ className: \"Logo\", onClick: props.onLogoClicked }, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"img\", { className: \"Logo_Image\", src: _assets_images_logo_jopit_icon_webp__WEBPACK_IMPORTED_MODULE_1__, alt: _resources__WEBPACK_IMPORTED_MODULE_3__.resources.logo.iconAlt }) })));\r\n}\r\n\n\n//# sourceURL=webpack://@jopitnow/web-components/./src/logo/Logo.tsx?");
 
 /***/ }),
 
@@ -420,13 +420,13 @@ eval("module.exports = \"data:image/webp;base64,UklGRqoDAABXRUJQVlA4TJ0DAAAv/8F/
 
 /***/ }),
 
-/***/ "./assets/images/logo/jopit_icon.svg":
-/*!*******************************************!*\
-  !*** ./assets/images/logo/jopit_icon.svg ***!
-  \*******************************************/
-/***/ ((module) => {
+/***/ "./assets/images/logo/jopit_icon.webp":
+/*!********************************************!*\
+  !*** ./assets/images/logo/jopit_icon.webp ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = \"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfNjVfMjgpIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF82NV8yOCkiPgo8cGF0aCBkPSJNODA0IDBIMjIwQzk4LjQ5NzcgMCAwLjAwMDM1MTY3MiA5OC40OTczIDAuMDAwMzA1NTA0IDIyMEw4LjM1OTU2ZS0wNSA4MDRDMy43NDI3ZS0wNSA5MjUuNTAzIDk4LjQ5NzUgMTAyNCAyMjAgMTAyNEg4MDRDOTI1LjUwMyAxMDI0IDEwMjQgOTI1LjUwMyAxMDI0IDgwNFYyMjBDMTAyNCA5OC40OTc0IDkyNS41MDMgMCA4MDQgMFoiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl82NV8yOCkiLz4KPC9nPgo8cGF0aCBkPSJNNzEzLjA1IDc5Mi41MzRDNzEzLjA1IDc5Mi41MzQgNzM3LjE2NyA3OTQuNzY3IDc1Mi42NjcgNzkyLjUzNEM3NjguMTY3IDc5MC4zIDc5NS4xNjcgNzc4LjMgODA3LjQ3NSA3NjYuNzk2QzgxOS43ODQgNzU1LjI5MiA4MjQuODQzIDc0Ni44MjkgODM0LjQ3NiA3MjcuNzk2Qzg0MC41NzMgNzEwLjg0OSA4MzkuNjY3IDcxMy4zIDg0Mi42NjcgNjg4LjNDODQxLjE2NyA2NjMuMyA4MzUuMzEzIDY0Ni44IDgzMC45NjUgNjM4LjhDODIxLjQ3NCA2MjEuMzM3IDgxOC42OTcgNjE5LjMzMiA4MDcuNDc1IDYwNy43OTdDODA4LjcxOSA2MDYuODE3IDYxNi41IDQ3MC41IDYxNi41IDQ3MC41TTQxOC4xNjcgMjgxLjhDNDIwLjE2NyAyNjEuOCA0MzcuNjY3IDIzNS44IDQ0Ny4xNjcgMjI5LjNDNDY1LjgyOCAyMTYuNTMyIDQ3Ny42NjcgMjA4LjggNTAyLjY2NyAyMDguOEM1MzQuMzc1IDIwOC44IDU1My42NjcgMjIxLjMgNTY5LjE2NyAyMzguOEM1ODQuNjY3IDI1Ni4zIDU5MC42NjcgMjc2LjMgNTkwLjY2NyAyOTkuM0M1ODcuNjY3IDMyNC44IDU4Mi4yNTYgMzM4LjMxIDU2Ni40ODEgMzU1Ljc5N0M1NTAuNzA3IDM3My4yODQgMjEzLjg0MyA2MDYuOCAyMTIuMzQzIDYxMi4zQzE5My4zNDMgNjMwLjggMTg1LjI2NSA2NTUuNTU1IDE4My44NDMgNjYzLjhDMTc5Ljk2MiA2ODYuMyAxNzguODQzIDcwNy44IDE5My4zNDMgNzM1LjNDMjA3Ljg0MiA3NjIuOCAyMzkuMzQzIDc4Ni43NjcgMjY5Ljg0MyA3OTIuNTM0QzMwMC4zNDMgNzk4LjMgNTkyIDc5Mi41MzQgNTkyIDc5Mi41MzQiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNjVfMjgiIHg9Ii00IiB5PSIwIiB3aWR0aD0iMTAzMiIgaGVpZ2h0PSIxMDMyIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjQiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMiIvPgo8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJvdXQiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuMjUgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd182NV8yOCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImVmZmVjdDFfZHJvcFNoYWRvd182NV8yOCIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzY1XzI4IiB4MT0iMCIgeTE9IjEwMjQiIHgyPSIxMDI0IiB5Mj0iMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRkY0MjQyIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGNEQ2RCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzY1XzI4Ij4KPHJlY3Qgd2lkdGg9IjEwMjQiIGhlaWdodD0iMTAyNCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K\";\n\n//# sourceURL=webpack://@jopitnow/web-components/./assets/images/logo/jopit_icon.svg?");
+eval("module.exports = __webpack_require__.p + \"02bb417959a540a0ff8c.webp\";\n\n//# sourceURL=webpack://@jopitnow/web-components/./assets/images/logo/jopit_icon.webp?");
 
 /***/ }),
 
@@ -511,6 +511,18 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -525,6 +537,29 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

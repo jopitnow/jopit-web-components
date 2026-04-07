@@ -199,7 +199,7 @@
 
 /* MUI Dialog Overrides */
 .MuiDialog-paper {
-    overflow: hidden !important;
+    overflow: visible !important;
     background: transparent !important;
     box-shadow: none !important;
     border-radius: 20px !important;

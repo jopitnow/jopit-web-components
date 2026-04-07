@@ -719,27 +719,12 @@ input:-webkit-autofill {
 
 .Logo_Image {
     height: 32px;
-    width: 32px;
     pointer-events: none;
-}
-
-.Logo_Name {
-    font-family: Quicksand, serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #FF5656;
-    margin: auto auto 5px 8px;
 }
 
 @media screen and (max-width: 769px) {
     .Logo_Image {
         height: 28px;
-        width: 28px;
-    }
-
-    .Logo_Name {
-        font-size: 16px;
-        margin: auto auto 5px 8px;
     }
 }
 
@@ -1665,9 +1650,11 @@ option[value=""][disabled] {
 /* Mobile */
 @media screen and (max-width: 481px) {
     .Alert_Dialog {
-        min-width: 280px;
+        min-width: auto;
         max-width: 320px;
+        width: calc(100vw - 32px);
         border-radius: 16px;
+        box-sizing: border-box;
     }
 
     .Alert_Dialog_Header {
@@ -1697,7 +1684,7 @@ option[value=""][disabled] {
     .Alert_Dialog_Description {
         font-size: 12px;
         line-height: 18px;
-        max-width: 260px;
+        max-width: 100%;
     }
 
     .Alert_Dialog_Button_Container {
@@ -1713,6 +1700,26 @@ option[value=""][disabled] {
     }
 }
 
+/* Small Mobile */
+@media screen and (max-width: 400px) {
+    .Alert_Dialog_Button_Container {
+        padding: 20px 20px 24px 20px;
+        gap: 6px;
+    }
+
+    .Alert_Dialog_Button {
+        padding: 0 12px;
+        font-size: 11px;
+    }
+
+    .Alert_Dialog_Header {
+        padding: 22px 20px 0 20px;
+    }
+
+    .Alert_Dialog_Content {
+        padding: 16px 20px 0 20px;
+    }
+}
 /*!*****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/header/ShopHeader.css ***!
   \*****************************************************************************/
