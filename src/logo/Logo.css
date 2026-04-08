@@ -8,26 +8,11 @@
 
 .Logo_Image {
     height: 32px;
-    width: 32px;
     pointer-events: none;
-}
-
-.Logo_Name {
-    font-family: Quicksand, serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #FF5656;
-    margin: auto auto 5px 8px;
 }
 
 @media screen and (max-width: 769px) {
     .Logo_Image {
         height: 28px;
-        width: 28px;
-    }
-
-    .Logo_Name {
-        font-size: 16px;
-        margin: auto auto 5px 8px;
     }
 }
